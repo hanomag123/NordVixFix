@@ -42,7 +42,6 @@
   background-color: $secondary;
 
   clip-path: polygon(0 0, 93% 0, 100% 100%, 0% 100%);
-
   @include breakpoint($lg-bp) {
     width: 100%;
 
