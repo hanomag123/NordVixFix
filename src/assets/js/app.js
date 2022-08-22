@@ -277,8 +277,7 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.add('header')
       }
     }
-    
-  
+
       function scrollHidden() {
             let lastScroll = 0;
           const defaultOffset = 0;
@@ -359,6 +358,7 @@ const arrowBack = document.querySelectorAll('.arrowBack')
 
 headerButton.addEventListener('click', function () {
   helper.classList.toggle('helperActive')
+  document.documentElement.classList.toggle('noScroll')
 })
 
 
@@ -449,6 +449,7 @@ const burgerIcon = document.querySelector('.burgerIcon');
 
   burgerIcon.addEventListener('click', function() {
     helper.classList.toggle('helperActive')
+    document.documentElement.classList.toggle('noScroll')
   })
 
 
