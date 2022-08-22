@@ -16,6 +16,8 @@
   background: url(../images/header-bg.png) no-repeat;
   background-size: cover;
 
+  transition: all 0.5s ease;
+
   @include breakpoint($lg-bp) {
     padding: 0;
     height: 14rem;
@@ -248,14 +250,15 @@
 
 .hiddenHeader {
   display: none;
-  transform: translateY(-9rem);
   transition: all 0.5s;
+  transform: translateY(0);
   
   @include breakpoint($lg-bp) {
     transform: translateY(-15rem);
   }
   
 }
+
 
 .hiddenHeaderHelp {
   display: none;
@@ -270,20 +273,20 @@
 
 
 .headerTransform {  
-  transition: all 0.5s;
   background: url(../images/header-bg.png) no-repeat;
   background-size: cover;
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 11;
+  transform: translateY(-9rem);
   
   display: flex;
   justify-content: center;
   flex-direction: column;
 
-  
-  
+  padding: 0;
+  transition: all 0.5s ease;
   @include breakpoint($lg-bp) {
     height: 14rem;
   }
@@ -511,10 +514,17 @@
 }
 
 
-//header mobile
-
-
-
+.out {
+  transition: transform 0.5s ease;
+  transform: translateY(0);
+}
+.have {
+  transition: transform 0.5s ease;
+  transform: translateY(-9rem);
+}
+.trans {
+  transition: transform 0.5s ease;
+}
 .headerMobile {
   display: block;
   width: 100%;
@@ -1289,6 +1299,9 @@
   display: block;
 }
 
+// *[hidden] {
+//   display: none;
+// }
 
 
 

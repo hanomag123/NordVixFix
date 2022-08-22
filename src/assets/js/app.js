@@ -275,7 +275,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }else if (document.body.scrollTop < 430 || document.documentElement.scrollTop < 430) {
         header.classList.remove('headerTransform')
         header.classList.add('header')
-      }
+      } 
     }
     
   
@@ -287,15 +287,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
           window.addEventListener('scroll', () => {
           
-          if (scrollPosition() > lastScroll && !containHide()) {
-
-            if (document.documentElement.scrollTop > 460) {
-              header.classList.add('hiddenHeader');
-            }
-            
-          }
-          else if (scrollPosition() < lastScroll && containHide() ) {
-            header.classList.remove('hiddenHeader')
+          if (scrollPosition() < lastScroll) {
+            header.classList.add('out')
+            header.classList.remove('have')
+          } else {
+            header.classList.remove('out')
+            header.classList.add('have')
           }
           
           
