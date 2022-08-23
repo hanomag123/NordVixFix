@@ -244,60 +244,88 @@ document.addEventListener("DOMContentLoaded", () => {
 
  }
 
-  
-  
-
-
-
-
 
 
   let header = document.querySelector('.header')
   let page = document.querySelector('.page')
+  const searchButton = document.querySelector('.header__search')
+  const searchBlock = document.querySelector('.search')
+
+  searchButton.addEventListener('click', toggleSearch)
+
+  function toggleSearch() {
+    searchBlock.classList.toggle('search--hidden')
+    !searchBlock.classList.contains('search--hidden') ? document.addEventListener('mouseup', closeSearchDoc) : document.removeEventListener('mouseup', closeSearchDoc)
+  }
+
+  function closeSearch() {
+    searchBlock.classList.add('search--hidden')
+    document.removeEventListener('mouseup', closeSearchDoc)
+  }
+  function closeSearchDoc() {
+    const isItSearchButton = Boolean(event.target.closest('.header__search'))
+    if (event.target.closest('.search') === null && !isItSearchButton) {
+      closeSearch()
+    }
+  }
   
   if (header != null) {
 
-    scrollHidden()
-    scrollTrue ()
+    getWidth()
+
+    window.addEventListener('resize', getWidth)
+
+    function getWidth() {
+      if (innerWidth > 920) {
+        scrollHidden()
+        scrollTrue()
+      } else {
+        if (header != null) {
+        header.classList.add('out')
+        header.classList.remove('have')
+        header.classList.remove('header')
+        header.classList.add('headerTransform')
+        window.removeEventListener('scroll', scrollHandler)
+        window.removeEventListener('scroll', scrollFunction)
+      }
+    }
+  }
+    // scrollHidden()
 
     function scrollTrue () {
-      window.onscroll = function() {
-        scrollFunction()
-      };
+      window.addEventListener('scroll', scrollFunction)
     }
     
       
     
     function scrollFunction() {
-      if (document.body.scrollTop > 430 || document.documentElement.scrollTop > 430) {
+      if (document.body.scrollTop > 390 || document.documentElement.scrollTop > 390) {
         header.classList.remove('header')
         header.classList.add('headerTransform')
+        if (header.classList.contains('have')) {
+          closeSearch()
+        }
       }else if (document.body.scrollTop < 430 || document.documentElement.scrollTop < 430) {
         header.classList.remove('headerTransform')
         header.classList.add('header')
       } 
     }
-    
+    let lastScroll = 0;
+    const scrollPosition = () =>document.documentElement.scrollTop
   
       function scrollHidden() {
-            let lastScroll = 0;
-          const defaultOffset = 0;
-          const scrollPosition = () =>document.documentElement.scrollTop
-          const containHide = () => header.classList.contains('hiddenHeader');
+          window.addEventListener('scroll', scrollHandler)
+      }
 
-          window.addEventListener('scroll', () => {
-          
-          if (scrollPosition() < lastScroll && scrollPosition() > 483) {
-            header.classList.add('out')
-            header.classList.remove('have')
-          } else {
-            header.classList.remove('out')
-            header.classList.add('have')
-          }
-          
-          
-          lastScroll = scrollPosition();
-        })
+      function scrollHandler () {
+        if (scrollPosition() < lastScroll) {
+          header.classList.add('out')
+          header.classList.remove('have')
+        } else {
+          header.classList.remove('out')
+          header.classList.add('have')
+        }
+        lastScroll = scrollPosition();
       }
       
   }
