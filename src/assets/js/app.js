@@ -310,9 +310,12 @@ document.addEventListener("DOMContentLoaded", () => {
         header.classList.add('header')
       } 
     }
+
     let lastScroll = 0;
     const scrollPosition = () =>document.documentElement.scrollTop
   
+
+
       function scrollHidden() {
           window.addEventListener('scroll', scrollHandler)
       }
@@ -384,6 +387,7 @@ const arrowBack = document.querySelectorAll('.arrowBack')
 
 headerButton.addEventListener('click', function () {
   helper.classList.toggle('helperActive')
+  document.documentElement.classList.toggle('noScroll')
 })
 
 
@@ -435,7 +439,7 @@ if (menuControlTitle.length > 0 && menuContentContainer.length > 0 && window.mat
       
       deleteClassFirst(activeBackground)
       deleteClassSec(menuContentContainerActive)
-      //////
+
       menuContentContainer[id].classList.add("menuContentContainerActive");
       el.classList.add("activeBackground");  
   
@@ -474,6 +478,7 @@ const burgerIcon = document.querySelector('.burgerIcon');
 
   burgerIcon.addEventListener('click', function() {
     helper.classList.toggle('helperActive')
+    document.documentElement.classList.toggle('noScroll')
   })
 
 
