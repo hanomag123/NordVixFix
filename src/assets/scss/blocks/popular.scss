@@ -61,6 +61,10 @@
     margin-left: 33rem;
     margin-right: 10.6rem;
 
+    @include breakpoint($cos-bp) {
+      margin-left: 10rem !important;
+    }
+
     @include breakpoint($lg-bp) {
       text-align: center;
 

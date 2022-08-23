@@ -255,6 +255,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function toggleSearch() {
     searchBlock.classList.toggle('search--hidden')
+    if (helper.classList.contains('helperActive')) {
+      headerButton.click()
+      
+    }
     !searchBlock.classList.contains('search--hidden') ? document.addEventListener('mouseup', closeSearchDoc) : document.removeEventListener('mouseup', closeSearchDoc)
   }
 
@@ -382,12 +386,24 @@ const generalTabs = document.querySelectorAll('.generalTabs')
 const arrowBackTitleContainer = document.querySelectorAll('.arrowBackTitleContainer')
 const text = document.querySelectorAll('.text')
 const arrowBack = document.querySelectorAll('.arrowBack')
+const headerMain = document.querySelector('header')
 
 
 
 headerButton.addEventListener('click', function () {
   helper.classList.toggle('helperActive')
+  header.classList.add('out')
+  header.classList.remove('have')
   document.documentElement.classList.toggle('noScroll')
+  if (!headerMain.classList.contains('headerTransform')) {
+    headerMain.classList.toggle('scroll')
+    header.scrollIntoView({
+      behavior: 'smooth'
+    })
+  } else {
+    headerMain.classList.remove('scroll')
+    header.classList.toggle('overFlowAuto')
+  }
 })
 
 
