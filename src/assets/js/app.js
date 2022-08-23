@@ -286,7 +286,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           window.addEventListener('scroll', () => {
           
-          if (scrollPosition() < lastScroll) {
+          if (scrollPosition() < lastScroll && scrollPosition() > 483) {
             header.classList.add('out')
             header.classList.remove('have')
           } else {
