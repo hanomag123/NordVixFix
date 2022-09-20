@@ -1,0 +1,10 @@
+.procent {
+  position: relative;
+  &::after {
+    content: '%';
+    position: absolute;
+    bottom: 2rem;
+    transform: translateY(50%);
+    right: -2rem;
+  }
+}

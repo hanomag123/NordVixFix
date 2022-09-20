@@ -17,7 +17,7 @@
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1;
-    color: #503e3f;
+    color: #240E0E;
 
     @include breakpoint($sm-bp) {
       font-size: 1.4rem;
@@ -225,9 +225,9 @@
   display: grid;
   row-gap: 1.2rem;
 
-  & + & {
-    margin-top: 2.4rem;
-  }
+  // & + & {
+  //   margin-top: 2.4rem;
+  // }
 
   input {
     width: 100%;
@@ -385,6 +385,9 @@
   @include breakpoint($sm-bp) {
     max-width: unset;
   }
+}
+.param-select__item--width {
+  max-width: unset;
 }
 
 .questnry-def-select {

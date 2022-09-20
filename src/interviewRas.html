@@ -82,19 +82,42 @@ title: Опросные листы
                     </div>
                     <div class="questnry-section">
                         <h2 class="questnry-heading">Параметры измеряемой среды</h2>
-                        <div class="questnry-section__inner">
-                            <div class="questnry-section__box">
-                                <h3 class="questnry-subheading">Подзаголовок</h3>
-                                <div class="req-item">
+                        <div class="questnry-customer questnry-section__inner">
+                            <div class="req-item">
+                                <label for="change-env">Измеряемая среда</label>
+                                <input type="text" id="change-env">
+                            </div>
+                            <div class="param-select__item param-select__item--width">
+                                <p class="param-select__heading">Фазовые состояния</p>
+                                <select class="questnry-def-select">
+                                    <option value="Селект с выбором">Выбрать</option>
+                                    <option value="Выбор №2">Выбор №2</option>
+                                    <option value="Выбор пункта №3">Выбор пункта №3</option>
+                                    <option value="Выбор №4">Выбор №4</option>
+                                    <option value="Выбор №5">Выбор №5</option>
+                                    <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                </select>
+                            </div>
+                            <div class="req-item">
+                                <label for="compound">Состав (если смесь)</label>
+                                <input type="text" id="compound">
+                            </div>
+                            <div class="req-item procent">
+                                <label for="conc">Концентрация (если раствор)</label>
+                                <input type="text" id="conc">
+                            </div>
+                            <!-- <div class="questnry-section__box"> -->
+                                <!-- <h3 class="questnry-subheading">Подзаголовок</h3> -->
+                                <!-- <div class="req-item">
                                     <label for="req-one">Вариант заполнения №1</label>
                                     <input type="text" id="req-one">
-                                </div>
-                                <div class="req-item">
+                                </div> -->
+                                <!-- <div class="req-item">
                                     <label for="req-two">Вариант заполнения №2</label>
                                     <input type="text" id="req-two">
-                                </div>
-                            </div>
-                            <div class="questnry-section__box">
+                                </div> -->
+                            <!-- </div> -->
+                            <!-- <div class="questnry-section__box">
                                 <h3 class="questnry-subheading">Подзаголовок</h3>
                                 <div class="questnry-checkbox__wrapper" style="margin-bottom: 4rem;">
                                     <div class="questnry-checkbox">
@@ -144,8 +167,8 @@ title: Опросные листы
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="questnry-section__box">
+                            </div> -->
+                            <!-- <div class="questnry-section__box">
                                 <h3 class="questnry-subheading">Подзаголовок</h3>
                                 <div class="questnry-radio__wrapper" style="margin-bottom: 4rem;">
                                     <div class="questnry-radio">
@@ -189,7 +212,7 @@ title: Опросные листы
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="questnry-section">
