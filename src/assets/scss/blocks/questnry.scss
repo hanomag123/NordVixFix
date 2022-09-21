@@ -190,6 +190,9 @@
     margin-bottom: 5rem;
   }
 }
+.questnry-section__inner--without-padding {
+  padding-left: 0;
+}
 
 .questnry-section__box {
   & + & {
@@ -211,7 +214,30 @@
     gap: 2.4rem;
   }
 }
-
+.questnry-customer--margin {
+  & {
+    margin-top: 5.2rem;
+    margin-bottom: 10rem;
+    @include breakpoint($sm-bp) {
+      margin-top: 4rem;
+      margin-bottom: 5rem;
+    }
+  }
+}
+.questnry-customer--padding {
+  & {
+    padding-left: 2.5rem;
+    @include breakpoint($sm-bp) {
+      padding-left: 0;
+    }
+  }
+}
+.questnry-customer--padding-bottom {
+  padding-bottom: 4rem;
+  @include breakpoint($sm-bp) {
+    padding-bottom: 2.4rem;
+  }
+}
 .questnry-customer__item {
   display: grid;
   row-gap: 0.8rem;
@@ -233,6 +259,9 @@
     width: 100%;
     max-width: 84rem;
   }
+}
+.req-item--mt {
+  margin-top: 2.4rem;
 }
 
 .questnry-checkbox__wrapper,
@@ -326,6 +355,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2.4rem 2rem;
+}
+.questnry-checktabs__wrapper--gap4 {
+  gap: 2.4rem 4rem;
 }
 
 .questnry-checktab {
