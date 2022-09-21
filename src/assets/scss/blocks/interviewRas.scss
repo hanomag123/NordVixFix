@@ -136,3 +136,14 @@
     row-gap: 3rem;
   }
 }
+
+.pb40 {
+  padding-bottom: 4rem;
+}
+
+.w20 {
+  width: 20rem;
+  @include breakpoint($sm-bp) {
+    width: 100%;
+  }
+}

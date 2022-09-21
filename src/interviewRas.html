@@ -945,7 +945,7 @@ title: Опросные листы
                                     </div>
                                 </div>
                             </div>
-                            <div class="questnry-customer">
+                            <div class="questnry-customer pb40">
                                 <div class="req-item">
                                     <label for="flowmeter-other-input">Укажите иное</label>
                                     <input type="text" id="flowmeter-other-input">
@@ -955,30 +955,78 @@ title: Опросные листы
                                 <p>Тип кабельных вводов </p>
                                 <div class="checkbox-container" style="margin-bottom: 4rem;">
                                     <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="Coriolis" name="Coriolis"
-                                            value="Coriolis" checked>
-                                        <label for="Coriolis">каб. вводы M20x1,5</label>
+                                        <input class="custom-checkbox" type="checkbox" id="cabel-type-m20X1.5-with-cab" name="cabel-type-m20X1.5-with-cab"
+                                            value="cabel-type-m20X1.5-with-cab" checked>
+                                        <label for="cabel-type-m20X1.5-with-cab">каб. вводы M20x1,5</label>
                                     </div>
                                     <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="Electromagnetic"
-                                            name="Electromagnetic" value="Electromagnetic">
-                                        <label for="Electromagnetic">Электромагнитный </label>
+                                        <input class="custom-checkbox" type="checkbox" id="cabel-type-1/2NPT-with-cab"
+                                            name="cabel-type-1/2NPT-with-cab" value="cabel-type-1/2NPT-with-cab">
+                                        <label for="cabel-type-1/2NPT-with-cab">каб. вводы 1/2" NPT</label>
                                     </div>
                                     <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="Vortex" name="Vortex"
-                                            value="Vortex">
-                                        <label for="Vortex">Вихревой</label>
+                                        <input class="custom-checkbox" type="checkbox" id="cabel-type-m20X1.5-without-cab" name="cabel-type-m20X1.5-without-cab"
+                                            value="cabel-type-m20X1.5-without-cab">
+                                        <label for="cabel-type-m20X1.5-without-cab">M20x1,5 без каб вводов</label>
                                     </div>
                                     <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="Rotameter" name="Rotameter"
-                                            value="Rotameter">
-                                        <label for="Rotameter">Ротаметр</label>
+                                        <input class="custom-checkbox" type="checkbox" id="cabel-type-1/2NPT-without-cab" name="cabel-type-1/2NPT-without-cab"
+                                            value="cabel-type-1/2NPT-without-cab">
+                                        <label for="cabel-type-1/2NPT-without-cab">1/2" NPT без каб вводов</label>
                                     </div>
                                     <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="Not-important"
-                                            name="Not-important" value="Not-important">
-                                        <label for="Not-important">Не важно</label>
+                                        <input class="custom-checkbox" type="checkbox" id="cabel-type-Not-important"
+                                            name="cabel-type-Not-important" value="cabel-type-Not-important">
+                                        <label for="cabel-type-Not-important">Не важно</label>
                                     </div>
+                                </div>
+                            </div>
+                            <div class="questnry-customer">
+                                <div class="param-select__item param-select__item--width">
+                                    <p class="param-select__heading">Взрывозащита</p>
+                                    <select class="questnry-def-select" name="blow-up-defence">
+                                        <option value="Селект с выбором">Выбрать</option>
+                                        <option value="Выбор №2">Выбор №2</option>
+                                        <option value="Выбор пункта №3">Выбор пункта №3</option>
+                                        <option value="Выбор №4">Выбор №4</option>
+                                        <option value="Выбор №5">Выбор №5</option>
+                                        <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                    </select>
+                                </div>
+                                <div class="req-item">
+                                    <label for="blow-up-defence-zone">Зона</label>
+                                    <input type="text" id="blow-up-defence-zone">
+                                </div>
+                                <div class="dfgap16 task">
+                                    <p>Требования по функциональной безопасности</p>
+                                    <div class="df2gap">
+                                        <div class="questnry-checktab__item">
+                                            <input class="questnry-checktab" type="checkbox"
+                                                id="SIL2">
+                                            <label for="SIL2">SIL2</label>
+                                        </div>
+                                        <div class="questnry-checktab__item">
+                                            <input class="questnry-checktab" type="checkbox"
+                                                id="SIL3">
+                                            <label for="SIL3">SIL3</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div></div>
+                                <div class="questnry-section__box">
+                                    <p>Желательный монтаж преобразователя и сенсора</p>
+                                    <div class="questnry-switch__wrapper">
+                                        <p class="questnry-switch-first active">Интегральный</p>
+                                        <label class="questnry-switch" for="questnry-switch-checkbox1">
+                                            <input type="checkbox" id="questnry-switch-checkbox1" />
+                                            <div class="questnry-switch__slider round"></div>
+                                        </label>
+                                        <p class="questnry-switch-second">Удаленный</p>
+                                    </div>
+                                </div>
+                                <div class="req-item procent w20" data-value="м">
+                                    <label for="blow-up-defence-zone">Длина кабеля</label>
+                                    <input type="num" id="blow-up-defence-zone">
                                 </div>
                             </div>
                         </div>
