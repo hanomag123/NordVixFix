@@ -76,7 +76,7 @@
 }
 .gr-clm-sp2--3cln {
   display: grid;
-  grid-template-columns: 35rem 18.2rem 16.5rem;
+  grid-template-columns: 40rem 14.2rem 18.2rem;
   column-gap: 4rem;
   label {
     white-space: nowrap;
@@ -89,12 +89,27 @@
   }
 }
 
+.ml30 {
+  margin-left: 3rem;
+  @include breakpoint($sm-bp) {
+    margin-left: 0;
+  }
+}
 .df2gap {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
 
+.row {
+  flex-direction: row;
+}
+.df {
+  display: flex;
+}
 .dfgap16 {
   display: flex;
   flex-direction: column;
@@ -113,12 +128,13 @@
 
 .checkbox-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, max-content);
   row-gap: 2rem;
   column-gap: 4rem;
   @include breakpoint($sm-bp) {
     display: grid;
     grid-template-columns: 1fr;
+    row-gap: 3rem;
   }
 }
 
@@ -145,5 +161,98 @@
   width: 20rem;
   @include breakpoint($sm-bp) {
     width: 100%;
+  }
+}
+
+.fz16 label{
+  font-size: 1.6rem!important;
+  @include breakpoint($sm-bp) {
+    font-size: 1.6rem!important;
+  }
+}
+.dg3col--min {
+  grid-template-columns: repeat(3, 12rem);
+  column-gap: 10.6rem;
+  @include breakpoint($sm-bp) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.mb60 {
+  margin-bottom: 6rem;
+  @include breakpoint($sm-bp) {
+    margin-bottom: 5rem;
+  }
+}
+.dg3col--twocol {
+  grid-template-columns: 12rem 40rem;
+  column-gap: 10.6rem;
+  @include breakpoint($sm-bp) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.dg3col--200 {
+  grid-template-columns: repeat(3, 20rem);
+  column-gap: 8.7rem;
+  @include breakpoint($sm-bp) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+.mb100 {
+  margin-bottom: 10rem;
+}
+
+.pl25 {
+  padding-left: 2.5rem;
+  @include breakpoint($sm-bp) {
+    padding-left: 0;
+  }
+}
+
+.gap20 {
+  row-gap: 1.99rem;
+}
+
+.fit-content {
+  width: min-content;
+
+  label {
+    width: max-content;
+    max-width: max-content;
+  }
+  input {
+    min-width: 15rem;
+  }
+  @include breakpoint($sm-bp) {
+    width: 100%;
+  }
+}
+
+.probka {
+  @include breakpoint($sm-bp) {
+    display: none;
+  }
+}
+
+.dfcol {
+  @include breakpoint($sm-bp) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.desc-hidden {
+  display: none;
+  @include breakpoint($sm-bp) {
+    display: inline;
+  }
+}
+
+.span2 {
+  grid-column: 2 span;
+  @include breakpoint($sm-bp) {
+    grid-column: auto;
   }
 }

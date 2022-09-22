@@ -25,7 +25,7 @@ title: Опросные листы
                     </svg>
                 </div>
                 <div class="questnry-nav__content">
-                    <span class="questnry-nav__link active" href="#"><span>Неразрушающий контроль</span></span>
+                    <span class="questnry-nav__link active" href="#"><span>Расходомеры</span></span>
                     <a class="questnry-nav__link" href="#"><span>Гидравилика и пневматика</span></a>
                     <a class="questnry-nav__link" href="#"><span>Насосное и компрессорное оборудование</span></a>
                     <a class="questnry-nav__link" href="#"><span>Мехатроника</span></a>
@@ -103,15 +103,15 @@ title: Опросные листы
                                 <input type="text" id="compound">
                             </div>
                             <div class="req-item procent" data-value="%">
-                                <label for="conc">Концентрация (если раствор)</label>
+                                <label for="conc">Концентрация (если раствор)<span class="desc-hidden">, %</span></label>
                                 <input type="text" id="conc">
                             </div>
                             <div class="req-item procent" data-value="%">
-                                <label for="The-presence-of-gas-(if-liquid)">Наличие газа (если жидкость)</label>
+                                <label for="The-presence-of-gas-(if-liquid)">Наличие газа (если жидкость)<span class="desc-hidden">, %</span></label>
                                 <input type="text" id="The-presence-of-gas-(if-liquid)">
                             </div>
 
-                            <div class="req-item"></div>
+                            <div class="probka"></div>
 
                             <div class="param-select__item param-select__item--width">
                                 <p class="param-select__heading">Образивная среда</p>
@@ -130,7 +130,7 @@ title: Опросные листы
                             </div>
                             <div class="param-select__item">
                                 <p class="param-select__heading">Размер частиц до</p>
-                                <div class="sm-select-wrapper">
+                                <div class="sm-select-wrapper w100">
                                     <input type="text">
                                     <select class="questnry-def-select" name="size-particles">
                                         <option value="Мм">Мм</option>
@@ -139,14 +139,14 @@ title: Опросные листы
                                 </div>
                             </div>
 
-                            <div class="req-item"></div>
+                            <div class="probka"></div>
 
                             <div class="req-item">
                                 <label for="Aggressive-environment">Агрессивная среда</label>
                                 <input type="text" id="Aggressive-environment">
                             </div>
 
-                            <div class="req-item"></div>
+                            <div class="probka"></div>
 
                             <div class="param-select__item param-select__item--width">
                                 <p class="param-select__heading">Склонность к налипанию</p>
@@ -159,152 +159,18 @@ title: Опросные листы
                                     <option value="Выбор пункта №6">Выбор пункта №6</option>
                                 </select>
                             </div>
-
-
-                            <!-- <div class="questnry-section__box"> -->
-                            <!-- <h3 class="questnry-subheading">Подзаголовок</h3> -->
-                            <!-- <div class="req-item">
-                                    <label for="req-one">Вариант заполнения №1</label>
-                                    <input type="text" id="req-one">
-                                </div> -->
-                            <!-- <div class="req-item">
-                                    <label for="req-two">Вариант заполнения №2</label>
-                                    <input type="text" id="req-two">
-                                </div> -->
-                            <!-- </div> -->
-                            <!-- <div class="questnry-section__box">
-                                <h3 class="questnry-subheading">Подзаголовок</h3>
-                                <div class="questnry-checkbox__wrapper" style="margin-bottom: 4rem;">
-                                    <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="v-3-1"
-                                            name="Вариант заполнения №3" value="Вариант заполнения №3" checked>
-                                        <label for="v-3-1">Вариант заполнения №3</label>
-                                    </div>
-                                    <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="v-3-2"
-                                            name="Вариант заполнения №3" value="Вариант заполнения №3">
-                                        <label for="v-3-2">Вариант заполнения №3</label>
-                                    </div>
-                                    <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="v-3-3"
-                                            name="Вариант заполнения №3" value="Вариант заполнения №3">
-                                        <label for="v-3-3">Вариант заполнения №3</label>
-                                    </div>
-                                    <div class="questnry-checkbox">
-                                        <input class="custom-checkbox" type="checkbox" id="v-3-4"
-                                            name="Вариант заполнения №3" value="Вариант заполнения №3">
-                                        <label for="v-3-4">Вариант заполнения №3</label>
-                                    </div>
-                                </div>
-                                <div class="req-inputs_select">
-                                    <p class="req-inputs__heading">Вариант заполнения №4</p>
-                                    <div class="req-inputs__inner">
-                                        <div class="sm-select-wrapper req-inputs__item">
-                                            <input type="number">
-                                            <select class="questnry-def-select">
-                                                <option value="Гц">Гц</option>
-                                                <option value="Вт">Вт</option>
-                                                <option value="Час">Час</option>
-                                                <option value="Гц">Гц</option>
-                                                <option value="Вт">Вт</option>
-                                                <option value="Час">Час</option>
-                                            </select>
-                                        </div>
-                                        <div class="req-inputs__item">
-                                            <input class="req-input-sm" type="number" id="req-input-w"
-                                                name="req-input-w">
-                                            <label for="req-input-w">Вт</label>
-                                        </div>
-                                        <div class="req-inputs__item">
-                                            <input class="req-input-sm" type="number" id="req-input-h"
-                                                name="req-input-h">
-                                            <label for="req-input-h">Час</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="questnry-section__box">
-                                <h3 class="questnry-subheading">Подзаголовок</h3>
-                                <div class="questnry-radio__wrapper" style="margin-bottom: 4rem;">
-                                    <div class="questnry-radio">
-                                        <input class="custom-radio" type="radio" name="cust-radio" id="cust-radio-1"
-                                            value="Вариант заполнения №3" checked>
-                                        <label for="cust-radio-1">Вариант заполнения №3</label>
-                                    </div>
-                                    <div class="questnry-radio">
-                                        <input class="custom-radio" type="radio" name="cust-radio" id="cust-radio-2"
-                                            value="Вариант заполнения №3">
-                                        <label for="cust-radio-2">Вариант заполнения №3</label>
-                                    </div>
-                                    <div class="questnry-radio">
-                                        <input class="custom-radio" type="radio" name="cust-radio" id="cust-radio-3"
-                                            value="Вариант заполнения №3">
-                                        <label for="cust-radio-3">Вариант заполнения №3</label>
-                                    </div>
-                                    <div class="questnry-radio">
-                                        <input class="custom-radio" type="radio" name="cust-radio" id="cust-radio-4"
-                                            value="Вариант заполнения №3">
-                                        <label for="cust-radio-4">Вариант заполнения №3</label>
-                                    </div>
-                                </div>
-                                <div class="req-inputs">
-                                    <p class="req-inputs__heading">Вариант заполнения №4</p>
-                                    <div class="req-inputs__inner">
-                                        <div class="req-inputs__item">
-                                            <input class="req-input-lg" type="number" id="req-input-gc"
-                                                name="req-input-gc">
-                                            <label for="req-input-gc">Гц</label>
-                                        </div>
-                                        <div class="req-inputs__item">
-                                            <input class="req-input-sm" type="number" id="req-input-w"
-                                                name="req-input-w">
-                                            <label for="req-input-w">Вт</label>
-                                        </div>
-                                        <div class="req-inputs__item">
-                                            <input class="req-input-sm" type="number" id="req-input-h"
-                                                name="req-input-h">
-                                            <label for="req-input-h">Час</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                     <div class="questnry-section">
                         <h2 class="questnry-heading">Параметры технологического процесса</h2>
                         <div class="questnry-section__inner">
-                            <!-- <div class="questnry-checktab__item">
-                                        <input class="questnry-checktab" type="checkbox" id="questnry-checktab-1">
-                                        <label for="questnry-checktab-1">Выбор табами</label>
-                                    </div>
-                                    <div class="questnry-checktab__item">
-                                        <input class="questnry-checktab" type="checkbox" id="questnry-checktab-2"
-                                            checked>
-                                        <label for="questnry-checktab-2">Выбор табами</label>
-                                    </div>
-                                    <div class="questnry-checktab__item">
-                                        <input class="questnry-checktab" type="checkbox" id="questnry-checktab-3">
-                                        <label for="questnry-checktab-3">Выбор табами</label>
-                                    </div>
-                                    <div class="questnry-checktab__item">
-                                        <input class="questnry-checktab" type="checkbox" id="questnry-checktab-4">
-                                        <label for="questnry-checktab-4">Выбор табами 1123 2323</label>
-                                    </div>
-                                    <div class="questnry-checktab__item">
-                                        <input class="questnry-checktab" type="checkbox" id="questnry-checktab-5">
-                                        <label for="questnry-checktab-5">Выбор табами</label>
-                                    </div>
-                                    <div class="questnry-checktab__item">
-                                        <input class="questnry-checktab" type="checkbox" id="questnry-checktab-6">
-                                        <label for="questnry-checktab-6">Выбор табами</label>
-                                    </div> -->
-                            <div class="questnry-section__box">
+                            <div class="questnry-section__box mw20">
                                 <h3 class="questnry-subheading">Измеряемый расход</h3>
                                 <div class="questnry-checktabs__wrapper questnry-checktabs__wrapper--gap4">
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Минимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Measured-consumption-min">
                                                 <select class="questnry-def-select"
                                                     name="Measured-consumption-min-value">
@@ -318,10 +184,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Номинальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Measured-consumption-av">
                                                 <select class="questnry-def-select"
                                                     name="Measured-consumption-av-value">
@@ -335,10 +201,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Максимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Measured-consumption-max">
                                                 <select class="questnry-def-select"
                                                     name="Measured-consumption-max-value">
@@ -355,13 +221,13 @@ title: Опросные листы
                                 </div>
                             </div>
 
-                            <div class="questnry-section__box">
+                            <div class="questnry-section__box mw20">
                                 <h3 class="questnry-subheading">Давление среды</h3>
                                 <div class="questnry-checktabs__wrapper questnry-checktabs__wrapper--gap4">
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Минимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-pressure-min">
                                                 <select class="questnry-def-select" name="Wednesday-pressure-min-value">
                                                     <option value="Ед">Ед</option>
@@ -374,10 +240,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Номинальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-pressure-av">
                                                 <select class="questnry-def-select" name="Wednesday-pressure-av-value">
                                                     <option value="Ед">Ед</option>
@@ -390,10 +256,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Максимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-pressure-max">
                                                 <select class="questnry-def-select" name="Wednesday-pressure-max-value">
                                                     <option value="Ед">Ед</option>
@@ -409,13 +275,13 @@ title: Опросные листы
                                 </div>
                             </div>
 
-                            <div class="questnry-section__box">
+                            <div class="questnry-section__box mw20">
                                 <h3 class="questnry-subheading">Температура среды</h3>
                                 <div class="questnry-checktabs__wrapper questnry-checktabs__wrapper--gap4">
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Минимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="temperature-env-min">
                                                 <select class="questnry-def-select" name="temperature-env-min-value">
                                                     <option value="Ед">Ед</option>
@@ -428,10 +294,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Номинальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="temperature-env-av">
                                                 <select class="questnry-def-select" name="temperature-env-av-value">
                                                     <option value="Ед">Ед</option>
@@ -444,10 +310,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Максимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="temperature-env-max">
                                                 <select class="questnry-def-select" name="temperature-env-max-value">
                                                     <option value="Ед">Ед</option>
@@ -462,13 +328,13 @@ title: Опросные листы
                                     </div>
                                 </div>
                             </div>
-                            <div class="questnry-section__box">
+                            <div class="questnry-section__box mw20">
                                 <h3 class="questnry-subheading">Плотность среды</h3>
                                 <div class="questnry-checktabs__wrapper questnry-checktabs__wrapper--gap4">
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Минимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-density-min">
                                                 <select class="questnry-def-select" name="Wednesday-density-min-value">
                                                     <option value="Ед">Ед</option>
@@ -481,10 +347,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Номинальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-density-av">
                                                 <select class="questnry-def-select" name="Wednesday-density-av-value">
                                                     <option value="Ед">Ед</option>
@@ -497,10 +363,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Максимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-density-max">
                                                 <select class="questnry-def-select" name="Wednesday-density-max-value">
                                                     <option value="Ед">Ед</option>
@@ -515,13 +381,13 @@ title: Опросные листы
                                     </div>
                                 </div>
                             </div>
-                            <div class="questnry-section__box">
+                            <div class="questnry-section__box mw20">
                                 <h3 class="questnry-subheading">Вязкость среды при рабочей температуре</h3>
                                 <div class="questnry-checktabs__wrapper questnry-checktabs__wrapper--gap4">
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Минимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Environmental-viscosity-min">
                                                 <select class="questnry-def-select"
                                                     name="Environmental-viscosity-min-value">
@@ -535,10 +401,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Номинальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Environmental-viscosity-av">
                                                 <select class="questnry-def-select"
                                                     name="Environmental-viscosity-av-value">
@@ -552,10 +418,10 @@ title: Опросные листы
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="req-inputs_select">
+                                    <div class="req-inputs_select maxwidth">
                                         <p class="req-inputs__heading">Максимальный</p>
                                         <div class="req-inputs__inner">
-                                            <div class="sm-select-wrapper req-inputs__item">
+                                            <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Environmental-viscosity-max">
                                                 <select class="questnry-def-select"
                                                     name="Environmental-viscosity-max-value">
@@ -572,112 +438,44 @@ title: Опросные листы
                                 </div>
                             </div>
                             <div class="questnry-customer questnry-customer--margin">
-                                <div class="questnry-customer">
+                                <div>
                                     <div class="req-item procent" data-value="мкСМ/см">
-                                        <label for="Environmental-conductivity">Проводимость среды</label>
+                                        <label for="Environmental-conductivity">Проводимость среды<span class="desc-hidden">, мкСМ/см</span></label>
                                         <input type="text" id="Environmental-conductivity">
                                     </div>
                                 </div>
-                                <div class="questnry-customer"></div>
-                                <div class="questnry-customer">
+                                <div class="probka"></div>
+                                <div class="w100">
                                     <div class="req-item procent" data-value="℃">
-                                        <label for="Environmental-temperature">Температура окружающей среды</label>
+                                        <label for="Environmental-temperature">Температура окружающей среды<span class="desc-hidden">, ℃</span></label>
                                         <input type="text" id="Environmental-temperature">
                                     </div>
                                 </div>
-                                <div class="questnry-customer"></div>
-                                <div class="param-select__item">
-                                    <p class="param-select__heading">Допустимые потери давления на приборе: </p>
-                                    <div class="sm-select-wrapper">
-                                        <input type="text">
-                                        <select class="questnry-def-select" name="Permissible-pressure-losses">
-                                            <option value="Мм">Мм</option>
-                                            <option value="См">См</option>
-                                        </select>
+                                <div class="probka"></div>
+                                <div>
+                                    <div class="param-select__item w100">
+                                        <p class="param-select__heading">Допустимые потери давления на приборе: </p>
+                                        <div class="sm-select-wrapper w100">
+                                            <input type="text">
+                                            <select class="questnry-def-select" name="Permissible-pressure-losses">
+                                                <option value="Мм">Мм</option>
+                                                <option value="См">См</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-
-
-                            <!-- <div class="questnry-section__box">
-                                <h3 class="questnry-subheading">Подзаголовок</h3>
-                                <div class="questnry-checktabs__wrapper" style="margin-bottom: 4rem;">
-                                    <div class="param-select__item">
-                                        <p class="param-select__heading">Вариант заполнения №1</p>
-                                        <select class="questnry-def-select">
-                                            <option value="Селект с выбором">Селект с выбором</option>
-                                            <option value="Выбор №2">Выбор №2</option>
-                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                            <option value="Выбор №4">Выбор №4</option>
-                                            <option value="Выбор №5">Выбор №5</option>
-                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
-                                        </select>
-                                    </div>
-                                    <div class="param-select__item">
-                                        <p class="param-select__heading">Вариант заполнения №1</p>
-                                        <div class="sm-select-wrapper">
-                                            <input type="text">
-                                            <select class="questnry-def-select">
-                                                <option value="Гц">Гц</option>
-                                                <option value="Вт">Вт</option>
-                                                <option value="Час">Час</option>
-                                                <option value="Гц">Гц</option>
-                                                <option value="Вт">Вт</option>
-                                                <option value="Час">Час</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="questnry-checktabs__wrapper">
-                                    <div class="param-select__item">
-                                        <p class="param-select__heading">Вариант заполнения №1</p>
-                                        <select class="questnry-def-select">
-                                            <option value="Селект с выбором">Селект с выбором</option>
-                                            <option value="Выбор №2">Выбор №2</option>
-                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                            <option value="Выбор №4">Выбор №4</option>
-                                            <option value="Выбор №5">Выбор №5</option>
-                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
-                                        </select>
-                                    </div>
-                                    <div class="param-select__item">
-                                        <p class="param-select__heading">Вариант заполнения №1</p>
-                                        <div class="sm-select-wrapper">
-                                            <input type="text">
-                                            <select class="questnry-def-select">
-                                                <option value="Гц">Гц</option>
-                                                <option value="Вт">Вт</option>
-                                                <option value="Час">Час</option>
-                                                <option value="Гц">Гц</option>
-                                                <option value="Вт">Вт</option>
-                                                <option value="Час">Час</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div> -->
-                            <!-- <div class="questnry-section__box">
-                                <h3 class="questnry-subheading">Подзаголовок</h3>
-                                <div class="questnry-switch__wrapper">
-                                    <p class="questnry-switch-first active">Вариант заполнения №1</p>
-                                    <label class="questnry-switch" for="questnry-switch-checkbox1">
-                                        <input type="checkbox" id="questnry-switch-checkbox1" />
-                                        <div class="questnry-switch__slider round"></div>
-                                    </label>
-                                    <p class="questnry-switch-second">Вариант заполнения №2</p>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                     <div class="questnry-section questnry-section__inner questnry-section__inner--without-padding">
                         <h2 class="questnry-heading">Присоединение к трубопроводу на объекте:</h2>
                         <div class="interview-wrapper-low">
                             <div class="req-item procent" data-value="мм">
-                                <label for="External-diameter-of-the-pipeline">Внешний диаметр трубопровода</label>
+                                <label for="External-diameter-of-the-pipeline">Внешний диаметр трубопровода<span class="desc-hidden">, мм</span></label>
                                 <input type="number" id="External-diameter-of-the-pipeline">
                             </div>
                             <div class="req-item procent" data-value="мм">
-                                <label for="Wall-thickness">Толщина стенки</label>
+                                <label for="Wall-thickness">Толщина стенки<span class="desc-hidden">, мм</span></label>
                                 <input type="number" id="Wall-thickness">
                             </div>
                         </div>
@@ -689,7 +487,7 @@ title: Опросные листы
                         </div>
                         <div class="questnry-section questnry-customer--padding">
                             <p class="param-select__heading">Стандарт фланцев: </p>
-                            <div class="questnry-radio__wrapper" style="margin-bottom: 4rem;">
+                            <div class="questnry-radio__wrapper dfcol" style="margin-bottom: 4rem;">
                                 <div class="questnry-radio">
                                     <input class="custom-radio" type="radio" name="cust-radio" id="cust-radio-1"
                                         value="Не важно" checked>
@@ -747,8 +545,8 @@ title: Опросные листы
                                         <label for="The-presence-of-thermal-insulation">Да</label>
                                     </div>
                                 </div>
-                                <div class="req-item procent" data-value="мм">
-                                    <label for="req-input-h">Толщина</label>
+                                <div class="req-item procent fit-content" data-value="мм">
+                                    <label for="req-input-h">Толщина<span class="desc-hidden">, мм</span></label>
                                     <input class="req-input-sm" type="number"
                                         id="The-presence-of-thermal-insulation-input"
                                         name="The-presence-of-thermal-insulation-input">
@@ -762,7 +560,7 @@ title: Опросные листы
                                         <label for="Vibrations-of-the-pipeline">Да</label>
                                     </div>
                                 </div>
-                                <div class="req-item">
+                                <div class="req-item fit-content">
                                     <label for="req-input-h">Апмл. Частота</label>
                                     <input class="req-input-sm" type="number" id="Vibrations-of-the-pipeline-input"
                                         name="Vibrations-of-the-pipeline-input">
@@ -786,8 +584,8 @@ title: Опросные листы
                                         <label for="Vibrations-of-the-pipeline">Да</label>
                                     </div>
                                 </div>
-                                <div class="req-item procent" data-value="мм">
-                                    <label for="req-input-h">Возможно сужение до:</label>
+                                <div class="req-item procent fit-content" data-value="мм">
+                                    <label for="req-input-h">Возможно сужение до<span class="desc-hidden">, мм</span></label>
                                     <input class="req-input-sm" type="number" id="Vibrations-of-the-pipeline-input"
                                         name="Vibrations-of-the-pipeline-input">
                                 </div>
@@ -824,12 +622,12 @@ title: Опросные листы
                                 </div>
                                 <div class="req-item procent" data-value="мм">
                                     <label for="Straight-sections-at-the-installation-site-before">До
-                                        расходомера</label>
+                                        расходомера<span class="desc-hidden">, мм</span></label>
                                     <input type="number" id="Straight-sections-at-the-installation-site-before">
                                 </div>
-                                <div class="req-item procent" data-value="мм">
+                                <div class="req-item procent ml30" data-value="мм">
                                     <label for="Straight-sections-at-the-installation-site-after">После
-                                        расходомера</label>
+                                        расходомера<span class="desc-hidden">, мм</span></label>
                                     <input type="number" id="Straight-sections-at-the-installation-site-after">
                                 </div>
                             </div>
@@ -907,15 +705,15 @@ title: Опросные листы
                                 <h3 class="questnry-subheading">Необходимая погрешность измерения: </h3>
                                 <div class="dg3col">
                                     <div class="req-item procent" data-value="%">
-                                        <label for="measurement-error-mas">Массового расхода</label>
+                                        <label for="measurement-error-mas">Массового расхода<span class="desc-hidden">, %</span></label>
                                         <input type="number" id="measurement-error-mas">
                                     </div>
                                     <div class="req-item procent" data-value="%">
-                                        <label for="measurement-error-obj">Объемного расхода</label>
+                                        <label for="measurement-error-obj">Объемного расхода<span class="desc-hidden">, %</span></label>
                                         <input type="number" id="measurement-error-obj">
                                     </div>
                                     <div class="req-item procent" data-value="кг/м3">
-                                        <label for="measurement-error-pl">Плотности</label>
+                                        <label for="measurement-error-pl">Плотности<span class="desc-hidden">, кг/м3</span></label>
                                         <input type="number" id="measurement-error-pl">
                                     </div>
                                 </div>
@@ -953,7 +751,7 @@ title: Опросные листы
                             </div>
                             <div class="questnry-section__box">
                                 <p>Тип кабельных вводов </p>
-                                <div class="checkbox-container" style="margin-bottom: 4rem;">
+                                <div class="checkbox-container fz16" style="margin-bottom: 4rem;">
                                     <div class="questnry-checkbox">
                                         <input class="custom-checkbox" type="checkbox" id="cabel-type-m20X1.5-with-cab" name="cabel-type-m20X1.5-with-cab"
                                             value="cabel-type-m20X1.5-with-cab" checked>
@@ -981,7 +779,7 @@ title: Опросные листы
                                     </div>
                                 </div>
                             </div>
-                            <div class="questnry-customer">
+                            <div class="questnry-customer mb60">
                                 <div class="param-select__item param-select__item--width">
                                     <p class="param-select__heading">Взрывозащита</p>
                                     <select class="questnry-def-select" name="blow-up-defence">
@@ -999,7 +797,7 @@ title: Опросные листы
                                 </div>
                                 <div class="dfgap16 task">
                                     <p>Требования по функциональной безопасности</p>
-                                    <div class="df2gap">
+                                    <div class="df2gap row">
                                         <div class="questnry-checktab__item">
                                             <input class="questnry-checktab" type="checkbox"
                                                 id="SIL2">
@@ -1012,21 +810,227 @@ title: Опросные листы
                                         </div>
                                     </div>
                                 </div>
-                                <div></div>
+                                <div class="probka"></div>
                                 <div class="questnry-section__box">
                                     <p>Желательный монтаж преобразователя и сенсора</p>
-                                    <div class="questnry-switch__wrapper">
+                                    <div class="questnry-switch__wrapper hor">
                                         <p class="questnry-switch-first active">Интегральный</p>
-                                        <label class="questnry-switch" for="questnry-switch-checkbox1">
-                                            <input type="checkbox" id="questnry-switch-checkbox1" />
+                                        <label class="questnry-switch" for="questnry-switch-montaj">
+                                            <input type="checkbox" id="questnry-switch-montaj" />
                                             <div class="questnry-switch__slider round"></div>
                                         </label>
                                         <p class="questnry-switch-second">Удаленный</p>
                                     </div>
                                 </div>
                                 <div class="req-item procent w20" data-value="м">
-                                    <label for="blow-up-defence-zone">Длина кабеля</label>
-                                    <input type="num" id="blow-up-defence-zone">
+                                    <label for="cab-lenght">Длина кабеля<span class="desc-hidden">, м</span></label>
+                                    <input type="num" id="cab-lenght">
+                                </div>
+                            </div>
+                            <div class="questnry-section__box">
+                                <h3 class="questnry-subheading">Выходные сигналы: </h3>
+                                <div class="dg3col dg3col--min">
+                                    <div class="req-item procent" data-value="Кол-во">
+                                        <label for="Output-signals-4-20mA">4-20 мА:<span class="desc-hidden"> (Кол-во)</span></label>
+                                        <input type="number" id="Output-signals-4-20mA">
+                                    </div>
+                                    <div class="req-item procent" data-value="Кол-во">
+                                        <label for="Output-signals-freq">част.-имп.:<span class="desc-hidden"> (Кол-во)</span></label>
+                                        <input type="number" id="Output-signals-freq">
+                                    </div>
+                                    <div class="req-item procent" data-value="Кол-во">
+                                        <label for="Output-signals-rel">Релейный:<span class="desc-hidden"> (Кол-во)</span></label>
+                                        <input type="number" id="Output-signals-rel">
+                                    </div>
+                                </div>
+                                <div class="dg3col dg3col--twocol">
+                                    <div class="req-item procent" data-value="Кол-во">
+                                        <label for="Output-signals-4-20mA">Цифровой:<span class="desc-hidden"> (Кол-во)</span></label>
+                                        <input type="number" id="Output-signals-numb">
+                                    </div>
+                                    <div class="param-select__item param-select__item--width">
+                                        <p class="param-select__heading">Тип цифрового сигнала</p>
+                                        <select class="questnry-def-select" name="Output-signals-type">
+                                            <option value="Селект с выбором">Выбрать</option>
+                                            <option value="Выбор №2">Выбор №2</option>
+                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
+                                            <option value="Выбор №4">Выбор №4</option>
+                                            <option value="Выбор №5">Выбор №5</option>
+                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="questnry-customer">
+                                    <div class="param-select__item param-select__item--width">
+                                        <p class="param-select__heading">Класс пылевлагозащиты: </p>
+                                        <select class="questnry-def-select" name="Output-signals-polumelastic-protection">
+                                            <option value="Селект с выбором">Выбрать</option>
+                                            <option value="Выбор №2">Выбор №2</option>
+                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
+                                            <option value="Выбор №4">Выбор №4</option>
+                                            <option value="Выбор №5">Выбор №5</option>
+                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                        </select>
+                                    </div>
+                                    <div></div>
+                                    <div class="param-select__item param-select__item--width">
+                                        <p class="param-select__heading">Материал корпуса сенсора и фланцев:</p>
+                                        <select class="questnry-def-select" name="Output-signals-material-of-sensor-and-flanges">
+                                            <option value="Селект с выбором">Выбрать</option>
+                                            <option value="Выбор №2">Выбор №2</option>
+                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
+                                            <option value="Выбор №4">Выбор №4</option>
+                                            <option value="Выбор №5">Выбор №5</option>
+                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                        </select>
+                                    </div>
+                                    <div class="probka"></div>
+                                    <div class="param-select__item param-select__item--width">
+                                        <p class="param-select__heading">Материал корпуса преобразователя: </p>
+                                        <select class="questnry-def-select" name="Output-signals-The material-of-the-converter-case">
+                                            <option value="Селект с выбором">Выбрать</option>
+                                            <option value="Выбор №2">Выбор №2</option>
+                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
+                                            <option value="Выбор №4">Выбор №4</option>
+                                            <option value="Выбор №5">Выбор №5</option>
+                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="questnry-section__box">
+                                <h3 class="questnry-subheading">Дополнительные функции </h3>
+                                <div class="df2gap">
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="LCD-indicator-with-buttons">
+                                        <label for="LCD-indicator-with-buttons">ЖК-индикатор с кнопочками </label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="A-computer-of-clean-oil">
+                                        <label for="A-computer-of-clean-oil">Компьютер чистой нефти</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Data-wireless-transmission">
+                                        <label for="Data-wireless-transmission">Беспроводная передача данных</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Dosing-function">
+                                        <label for="Dosing-function">Функция дозирования</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Simulation/unprincipled-verification">
+                                        <label for="Simulation/unprincipled-verification">Имитационная/беспроливная поверка</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Indication-of-the-phase-state">
+                                        <label for="Indication-of-the-phase-state">Индикация фазового состояния</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Russian-speaking-display-menu">
+                                        <label for="Russian-speaking-display-menu">Русскоязычное меню дисплея</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Measurement-of-multiphase-flow">
+                                        <label for="Measurement-of-multiphase-flow">Измерение многофазного потока</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Extended-density-analysis,-calculation-of-concentration">
+                                        <label for="Extended-density-analysis,-calculation-of-concentration">Расширенные анализ плотности, вычисление концентрации</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Archives">
+                                        <label for="Archives">Архивирование</label>
+                                    </div>
+                                    <div class="questnry-checktab__item">
+                                        <input class="questnry-checktab" type="checkbox"
+                                            id="Calculation-of-gas-flow-under-normal-conditions">
+                                        <label for="Calculation-of-gas-flow-under-normal-conditions">Вычисление расхода газа при нормальных условиях</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questnry-section pl25">
+                            <h2 class="questnry-heading questnry-heading--addl">Дополнительная информация</h2>
+                            <div class="questnry-section__box">
+                                <p>Требуемый тип расходомера</p>
+                                <div class="checkbox-container" style="margin-bottom: 4rem;">
+                                    <div class="questnry-checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="Representative-flanges" name="Representative-flanges"
+                                            value="Representative-flanges" checked>
+                                        <label for="Representative-flanges">Ответные фланцы</label>
+                                    </div>
+                                    <div class="questnry-checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="With-conical-transitions"
+                                            name="With-conical-transitions" value="With-conical-transitions">
+                                        <label for="With-conical-transitions">С коническими переходами </label>
+                                    </div>
+                                    <div class="questnry-checkbox">
+                                        <input class="custom-checkbox" type="checkbox" id="Rings/grounding-wheels" name="Rings/grounding-wheels"
+                                            value="Rings/grounding-wheels">
+                                        <label for="Rings/grounding-wheels">Кольца/диски заземления</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="questnry-section questnry-customer--padding mb100">
+                            <p class="param-select__heading">Термочехол </p>
+                            <div class="questnry-radio__wrapper dfcol" style="margin-bottom: 4rem;">
+                                <div class="questnry-radio">
+                                    <input class="custom-radio" type="radio" name="Thermoback" id="With-heating"
+                                        value="With-heating" checked>
+                                    <label for="With-heating">С обогревом</label>
+                                </div>
+                                <div class="questnry-radio">
+                                    <input class="custom-radio" type="radio" name="Thermoback" id="Without-heating"
+                                        value="Without-heating">
+                                    <label for="Without-heating">Без обогрева</label>
+                                </div>
+                            </div>
+                            <div class="dfgap16 gap20">
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="Assembly" name="Assembly"
+                                        value="Assembly" checked>
+                                    <label for="Assembly">Шеф-монтаж, пуско-наладка:</label>
+                                </div>
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="HART-Communitor" name="HART-Communitor"
+                                        value="HART-Communitor" checked>
+                                    <label for="HART-Communitor">Переносной HART-коммуникатор:</label>
+                                </div>
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="HART-MODEM" name="HART-MODEM"
+                                        value="HART-MODEM" checked>
+                                    <label for="HART-MODEM">HART-модем:</label>
+                                </div>
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="Registrar" name="Registrar"
+                                        value="Registrar" checked>
+                                    <label for="Registrar">Регистратор безбумажный:</label>
+                                </div>
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="Source-of-power" name="Source-of-power"
+                                        value="Source-of-power" checked>
+                                    <label for="Source-of-power">Источник питания ~220В/=24:</label>
+                                </div>
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="sparkles" name="sparkles"
+                                        value="sparkles" checked>
+                                    <label for="sparkles">Барьер искрозащиты:</label>
+                                </div>
+                                <div class="questnry-checkbox">
+                                    <input class="custom-checkbox" type="checkbox" id="PO" name="PO"
+                                        value="PO" checked>
+                                    <label for="PO">Программное обеспечение</label>
                                 </div>
                             </div>
                         </div>

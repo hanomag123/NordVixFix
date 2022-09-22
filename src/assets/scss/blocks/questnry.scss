@@ -3,6 +3,7 @@
 
   @include breakpoint($sm-bp) {
     margin-top: 2rem;
+    margin-bottom: 5rem;
   }
 
   input {
@@ -11,16 +12,25 @@
     padding: 0 1.5rem;
 
     border: 0.1rem solid #dadada;
+    @include breakpoint($sm-bp) {
+      height: 5rem;
+    }
   }
 
   label {
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     line-height: 1;
     color: #240E0E;
 
     @include breakpoint($sm-bp) {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
+    }
+  }
+  p {
+    font-size: 1.5rem;
+    @include breakpoint($sm-bp) {
+      font-size: 1.55rem;
     }
   }
 }
@@ -128,7 +138,7 @@
   padding-bottom: 5rem;
   margin-bottom: 5rem;
 
-  border-bottom: 0.1rem solid #dadada;
+  // border-bottom: 0.1rem solid #dadada;
 
   @include breakpoint($sm-bp) {
     padding-bottom: 4rem;
@@ -155,7 +165,7 @@
 
   @include breakpoint($sm-bp) {
     min-height: unset;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin-bottom: 2.4rem;
     padding: 1.2rem;
     clip-path: none;
@@ -175,7 +185,7 @@
   margin-bottom: 3.2rem;
 
   @include breakpoint($sm-bp) {
-    font-size: 1.6rem;
+    font-size: 1.86rem;
 
     margin-bottom: 2.4rem;
   }
@@ -269,6 +279,9 @@
   display: flex;
   flex-wrap: wrap;
   gap: 2rem 4rem;
+  @include breakpoint($sm-bp) {
+    gap: 3rem;
+  }
 }
 
 .questnry-checkbox {
@@ -349,8 +362,24 @@
       overflow: visible;
     }
   }
+  .w100 {
+    @include breakpoint($sm-bp) {
+      width: 100%;
+      max-width: 100%;
+      input {
+        width: 100%;
+      }
+      .choices {
+        width: 10rem;
+      }
+    }
+  }
 }
-
+.mw20 {
+  .sm-select-wrapper {
+    min-width: 20rem;
+  }
+}
 .questnry-checktabs__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -358,6 +387,9 @@
 }
 .questnry-checktabs__wrapper--gap4 {
   gap: 2.4rem 4rem;
+  @include breakpoint($sm-bp) {
+    flex-direction: column;
+  }
 }
 
 .questnry-checktab {
@@ -380,7 +412,7 @@
   transition: all 0.1s linear;
   color: #240e0e;
   cursor: pointer;
-  white-space: nowrap;
+  // white-space: nowrap;
 }
 
 .questnry-checktab:not(:disabled):not(:checked) + label:hover {
@@ -459,7 +491,6 @@
     border-right: none;
   }
 }
-
 .questnry-switch__wrapper {
   display: flex;
   align-items: center;
@@ -647,6 +678,12 @@
   }
 }
 
+.questnry-footer {
+  border-top: 1px solid #DADADA;
+  padding-top: 5rem;
+  margin-top: 5rem;
+}
+
 .questnry-footer__btns {
   display: flex;
   align-items: center;
@@ -670,5 +707,30 @@
     @include breakpoint($sm-bp) {
       width: 100%;
     }
+  }
+}
+.w100 {
+  width: 100%;
+  max-width: 100%;
+  input {
+    width: 100%;
+  }
+  .choices {
+    width: 10rem;
+  }
+}
+
+.maxwidth {
+  input {
+    @include breakpoint($sm-bp) {
+      max-width: 100%!important;
+    }
+  }
+}
+
+.hor {
+  flex-direction: row!important;
+  .questnry-switch {
+    transform: rotate(0);
   }
 }
