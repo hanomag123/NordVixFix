@@ -114,20 +114,49 @@ title: Опросные листы
                 <div class="dg3col dg3col--200">
                   <div class="req-item procent" data-value="м3/ч">
                     <label for="Aggressive-environment">Минимальная<span class="desc-hidden">, м3/ч</span></label>
-                    <input type="text" id="Aggressive-environment">
+                    <input type="text" id="proizvoditelnost-min">
                   </div>
                   <div class="req-item procent" data-value="м3/ч">
-                    <label for="Aggressive-environment">Минимальная<span class="desc-hidden">, м3/ч</span></label>
-                    <input type="text" id="Aggressive-environment">
+                    <label for="Aggressive-environment">Номинальная<span class="desc-hidden">, м3/ч</span></label>
+                    <input type="text" id="proizvoditelnost-norm">
                   </div>
                   <div class="req-item procent" data-value="м3/ч">
-                    <label for="Aggressive-environment">Минимальная<span class="desc-hidden">, м3/ч</span></label>
-                    <input type="text" id="Aggressive-environment">
+                    <label for="Aggressive-environment">Максимальная<span class="desc-hidden">, м3/ч</span></label>
+                    <input type="text" id="proizvoditelnost-max">
+                  </div>
+                </div>
+                
+                <div class="dg3col dg3col--200">
+                  <div class="req-item procent" data-value="бар">
+                    <label for="need-pressure-exit">Требуемое давление на выходе из насоса (без учета подпора)<span class="desc-hidden">, бар</span></label>
+                    <input type="text" id="need-pressure-exit">
+                  </div>
+                </div>
+
+                <div class="dg3col dg3col--200">
+                  <div class="req-item procent" data-value="бар">
+                    <label for="need-pressure-in">Давление на входе в насос<span class="desc-hidden">, бар</span></label>
+                    <input type="text" id="need-pressure-in">
+                  </div>
+                  <div class="req-item procent" data-value="бар">
+                    <label for="need-pressure-max">Максимальное давление в системе<span class="desc-hidden">, бар</span></label>
+                    <input type="text" id="need-pressure-max">
                   </div>
                 </div>
               </div>
+              <div class="param-select__item param-select__item--width">
+                <p class="param-select__heading">Материал рабочего колеса / корпуса</p>
+                <select class="questnry-def-select" name="pump-type">
+                  <option value="Селект с выбором">Выбрать</option>
+                  <option value="Выбор №2">Выбор №2</option>
+                  <option value="Выбор пункта №3">Выбор пункта №3</option>
+                  <option value="Выбор №4">Выбор №4</option>
+                  <option value="Выбор №5">Выбор №5</option>
+                  <option value="Выбор пункта №6">Выбор пункта №6</option>
+                </select>
+              </div>
               <div class="req-item">
-                <label for="change-env">Измеряемая среда</label>
+                <label for="change-env">Материал рабочего колеса / корпуса</label>
                 <input type="text" id="change-env">
               </div>
               <div class="req-item">
@@ -139,8 +168,7 @@ title: Опросные листы
                 <input type="text" id="conc">
               </div>
               <div class="req-item procent" data-value="%">
-                <label for="The-presence-of-gas-(if-liquid)">Наличие газа (если жидкость)<span class="desc-hidden">,
-                    %</span></label>
+                <label for="The-presence-of-gas-(if-liquid)">Наличие газа (если жидкость)<span class="desc-hidden">, %</span></label>
                 <input type="text" id="The-presence-of-gas-(if-liquid)">
               </div>
 

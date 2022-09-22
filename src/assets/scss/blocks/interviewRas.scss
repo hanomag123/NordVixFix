@@ -195,6 +195,15 @@
 .dg3col--200 {
   grid-template-columns: repeat(3, 20rem);
   column-gap: 8.7rem;
+  label {
+    white-space: nowrap;
+    @include breakpoint($sm-bp) {
+      white-space: normal;
+    }
+  }
+  input {
+    max-width: 20rem;
+  }
   @include breakpoint($sm-bp) {
     display: grid;
     grid-template-columns: 1fr;
