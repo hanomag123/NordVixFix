@@ -1,0 +1,407 @@
+---
+layout: default
+title: Опросные листы
+---
+
+<div class="breadcrumb-wrapper">
+  <div class="container">
+    <nav aria-label="breadcrumb" class="breadcrumb">
+      <a href="#">Главная</a>
+      <span aria-current="page">Опросные листы</span>
+    </nav>
+  </div>
+</div>
+
+
+<section class="questnry">
+  <div class="container">
+    <h1 class="page-heading">Опросные листы</h1>
+    <div class="questnry__inner">
+      <div class="questnry-nav">
+        <div class="questnry-nav__mob-heading">
+          <span>Выбрать категорию</span>
+          <svg>
+            <use href="#chevron"></use>
+          </svg>
+        </div>
+        <div class="questnry-nav__content">
+          <span class="questnry-nav__link active" href="#"><span>Расходомеры</span></span>
+          <a class="questnry-nav__link" href="#"><span>Гидравилика и пневматика</span></a>
+          <a class="questnry-nav__link" href="#"><span>Насосное и компрессорное оборудование</span></a>
+          <a class="questnry-nav__link" href="#"><span>Мехатроника</span></a>
+          <a class="questnry-nav__link" href="#"><span>Оптические системы и компоненты</span></a>
+          <a class="questnry-nav__link" href="#"><span>Гидравилика и пневматика</span></a>
+          <a class="questnry-nav__link" href="#"><span>Станочное оборудование</span></a>
+          <a class="questnry-nav__link" href="#"><span>Насосное и компрессорное оборудование</span></a>
+          <a class="questnry-nav__link" href="#"><span>Неразрушающий контроль</span></a>
+          <a class="questnry-nav__link" href="#"><span>Мехатроника</span></a>
+        </div>
+      </div>
+      <form class="questnry__content">
+        <div class="questnry__content-wrapper">
+          <div class="questnry-section">
+            <h2 class="questnry-heading">Общая информация</h2>
+            <div class="questnry-customer questnry-section__inner pb70sm">
+              <div class="questnry-customer__item">
+                <label for="Company">Организация</label>
+                <input type="text" id="Company">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="Naming">Наименование</label>
+                <input type="text" id="Naming">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="address">Адрес</label>
+                <input type="text" id="adress">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="phone">Телефон</label>
+                <input type="tel" id="phone">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="The-contact-person">ФИО</label>
+                <input type="text" id="The-contact-person">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="email">E-mail</label>
+                <input type="email" id="email">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="Job">Должность</label>
+                <input type="text" id="Job">
+              </div>
+              <div class="questnry-customer__item">
+                <label for="Address-of-the-object">Адрес объекта</label>
+                <input type="text" id="Address-of-the-object">
+              </div>
+            </div>
+          </div>
+          <div class="questnry-section">
+            <h2 class="questnry-heading pb40sm">Параметры насоса</h2>
+            <div class="questnry-customer questnry-section__inner pb70sm">
+              <div class="param-select__item param-select__item--width">
+                <p class="param-select__heading">Тип насоса</p>
+                <select class="questnry-def-select" name="pump-type">
+                  <option value="Селект с выбором">Выбрать</option>
+                  <option value="Выбор №2">Выбор №2</option>
+                  <option value="Выбор пункта №3">Выбор пункта №3</option>
+                  <option value="Выбор №4">Выбор №4</option>
+                  <option value="Выбор №5">Выбор №5</option>
+                  <option value="Выбор пункта №6">Выбор пункта №6</option>
+                </select>
+              </div>
+              <div class="probka"></div>
+              <div class="dfgap16 gap20">
+                <div class="questnry-checkbox">
+                  <input class="custom-checkbox" type="checkbox" id="pump-type-TP" name="pump-type-TP"
+                    value="pump-type-TP" checked>
+                  <label for="pump-type-TP">Одноступенчатый типа “инлайн” (ТР)</label>
+                </div>
+                <div class="questnry-checkbox">
+                  <input class="custom-checkbox" type="checkbox" id="pump-type-CR" name="pump-type-CR"
+                    value="pump-type-CR" checked>
+                  <label for="pump-type-CR">Мнгогоступенчатый типа “инлайн” (CR)</label>
+                </div>
+                <div class="questnry-checkbox">
+                  <input class="custom-checkbox" type="checkbox" id="pump-type-MTR/MTH" name="pump-type-MTR/MTH"
+                    value="pump-type-MTR/MTH" checked>
+                  <label for="pump-type-MTR/MTH">Полупогружной (MTR/MTH)</label>
+                </div>
+              </div>
+              <div class="probka"></div>
+              <div class="questnry-section__box mw20 span2">
+                <h3 class="questnry-subheading mt30">Производительность</h3>
+                <div class="dg3col dg3col--200 pb60">
+                  <div class="req-item procent" data-value="м&#179/ч">
+                    <label for="Aggressive-environment">Минимальная<span class="desc-hidden">, м<sup>3</sup>/ч</span></label>
+                    <input type="text" id="proizvoditelnost-min">
+                  </div>
+                  <div class="req-item procent" data-value="м&#179/ч">
+                    <label for="Aggressive-environment">Номинальная<span class="desc-hidden">, м<sup>3</sup>/ч</span></label>
+                    <input type="text" id="proizvoditelnost-norm">
+                  </div>
+                  <div class="req-item procent" data-value="м&#179/ч">
+                    <label for="Aggressive-environment">Максимальная<span class="desc-hidden">, м<sup>3</sup>/ч</span></label>
+                    <input type="text" id="proizvoditelnost-max">
+                  </div>
+                </div>
+                
+                <div class="dg3col dg3col--200 pb30">
+                  <div class="req-item procent" data-value="бар">
+                    <label for="need-pressure-exit">Требуемое давление на выходе из насоса (без учета подпора)<span class="desc-hidden">, бар</span></label>
+                    <input type="text" id="need-pressure-exit">
+                  </div>
+                </div>
+
+                <div class="dg3col dg3col--200 pb0">
+                  <div class="req-item procent" data-value="бар">
+                    <label for="need-pressure-in">Давление на входе в насос<span class="desc-hidden">, бар</span></label>
+                    <input type="text" id="need-pressure-in">
+                  </div>
+                  <div class="req-item procent" data-value="бар">
+                    <label for="need-pressure-max">Максимальное давление в системе<span class="desc-hidden">, бар</span></label>
+                    <input type="text" id="need-pressure-max">
+                  </div>
+                </div>
+              </div>
+              <div class="param-select__item param-select__item--width">
+                <p class="param-select__heading">Материал рабочего колеса / корпуса</p>
+                <select class="questnry-def-select" name="pump-type">
+                  <option value="Селект с выбором">Выбрать</option>
+                  <option value="Выбор №2">Выбор №2</option>
+                  <option value="Выбор пункта №3">Выбор пункта №3</option>
+                  <option value="Выбор №4">Выбор №4</option>
+                  <option value="Выбор №5">Выбор №5</option>
+                  <option value="Выбор пункта №6">Выбор пункта №6</option>
+                </select>
+              </div>
+              <!-- <div class="req-item procent" data-value="%">
+                <label for="conc">Концентрация (если раствор)<span class="desc-hidden">, %</span></label>
+                <input type="text" id="conc">
+              </div>
+              <div class="req-item procent" data-value="%">
+                <label for="The-presence-of-gas-(if-liquid)">Наличие газа (если жидкость)<span class="desc-hidden">, %</span></label>
+                <input type="text" id="The-presence-of-gas-(if-liquid)">
+              </div>
+
+              <div class="probka"></div>
+
+              <div class="param-select__item param-select__item--width">
+                <p class="param-select__heading">Образивная среда</p>
+                <select class="questnry-def-select" name="Abrasive">
+                  <option value="Селект с выбором">Выбрать</option>
+                  <option value="Выбор №2">Выбор №2</option>
+                  <option value="Выбор пункта №3">Выбор пункта №3</option>
+                  <option value="Выбор №4">Выбор №4</option>
+                  <option value="Выбор №5">Выбор №5</option>
+                  <option value="Выбор пункта №6">Выбор пункта №6</option>
+                </select>
+              </div>
+              <div class="req-item procent" data-value="%">
+                <label for="Contains-solid-particles">Содержит до «%» твердых частиц</label>
+                <input type="text" id="Contains-solid-particles">
+              </div>
+              <div class="param-select__item">
+                <p class="param-select__heading">Размер частиц до</p>
+                <div class="sm-select-wrapper w100">
+                  <input type="text">
+                  <select class="questnry-def-select" name="size-particles">
+                    <option value="Мм">Мм</option>
+                    <option value="См">См</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="probka"></div>
+
+              <div class="req-item">
+                <label for="Aggressive-environment">Агрессивная среда</label>
+                <input type="text" id="Aggressive-environment">
+              </div>
+
+              <div class="probka"></div>
+
+              <div class="param-select__item param-select__item--width">
+                <p class="param-select__heading">Склонность к налипанию</p>
+                <select class="questnry-def-select" name="A-tendency-to-sticking">
+                  <option value="Селект с выбором">Выбрать</option>
+                  <option value="Выбор №2">Выбор №2</option>
+                  <option value="Выбор пункта №3">Выбор пункта №3</option>
+                  <option value="Выбор №4">Выбор №4</option>
+                  <option value="Выбор №5">Выбор №5</option>
+                  <option value="Выбор пункта №6">Выбор пункта №6</option>
+                </select>
+              </div> -->
+            </div>
+          </div>
+          <div class="questnry-section">
+            <h2 class="questnry-heading pb40sm">Параметры жидкости</h2>
+            <div class="questnry-customer pb40 pl25">
+              <div class="req-item">
+                <label for="name-liquid">Название</label>
+                <input type="text" id="name-liquid">
+              </div>
+              <div class="req-item">
+                <label for="Chemical-formula">Химическая формула</label>
+                <input type="text" id="Chemical-formula">
+              </div>
+            </div>
+            <div class="dg3col dg3col--200 cg40 pl25 pb30">
+              <div class="req-item procent" data-value="%">
+                <label for="concentration-liquid">Концентрация<span class="desc-hidden">, %</span></label>
+                <input type="number" id="concentration-liquid">
+              </div>
+              <div class="req-item procent" data-value="℃">
+                <label for="temperature-liquid">Температура<span class="desc-hidden">, ℃</span></label>
+                <input type="number" id="temperature-liquid">
+              </div>
+              <div class="req-item procent" data-value="мм&#178/с">
+                <label for="Viscosity-liquid">Вязкость<span class="desc-hidden">, мм<sup>2</sup>/с</span></label>
+                <input type="number" id="Viscosity-liquid">
+              </div>
+            </div>
+            <div class="dg3col dg3col--200 pl25 pb30">
+              <div class="req-item procent" data-value="кг/м&#178">
+                <label for="Density">Плотность<span class="desc-hidden">, кг/м<sup>2</sup></span></label>
+                <input type="text" id="Density">
+              </div>
+              <div class="req-item procent" data-value="мг/л">
+                <label for="The-concentration-of-mechanical-impurities">Концентрация механических примесей<span class="desc-hidden">, мг/л</span></label>
+                <input type="text" id="The-concentration-of-mechanical-impurities">
+              </div>
+            </div>
+            <div class="dg3col dg3col--200 pl25 pb100">
+              <div class="req-item procent" data-value="мм">
+                <label for="The-size-of-mechanical-impurities">Размер механических примесей<span class="desc-hidden">, мм</span></label>
+                <input type="text" id="The-size-of-mechanical-impurities">
+              </div>
+            </div>
+          </div>
+          <div class="questnry-section">
+            <h2 class="questnry-heading pb40sm">Параметры жидкости</h2>
+              <div class="questnry-section__inner pb70sm">
+                <div class="dg3col dg3col--200 pb40">
+                  <div class="req-item procent" data-value="50 гц">
+                    <label for="The-size-of-mechanical-impurities">Напряжение<span class="desc-hidden"> (50 гц)</span></label>
+                    <input type="text" id="The-size-of-mechanical-impurities">
+                  </div>
+                </div>
+                <div class="questnry-section">
+                  <p class="param-select__heading mb25sm">Работа с частотным преобразователем </p>
+                  <div class="questnry-radio__wrapper dfcol" style="margin-bottom: 4rem;">
+                    <div class="questnry-radio">
+                      <input class="custom-radio" type="radio" name="frequency-converter" id="frequency-converter-1" value="frequency-converter-no" checked>
+                      <label for="frequency-converter-1">Нет</label>
+                    </div>
+                    <div class="questnry-radio">
+                      <input class="custom-radio" type="radio" name="frequency-converter" id="frequency-converter-2" value="frequency-converter-yes-in">
+                      <label for="frequency-converter-2">Да, встроеный</label>
+                    </div>
+                    <div class="questnry-radio">
+                      <input class="custom-radio" type="radio" name="frequency-converter" id="frequency-converter-3" value="frequency-converter-yes-out">
+                      <label for="frequency-converter-3">Да, внешний</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="questnry-customer pb40">
+                  <div class="param-select__item param-select__item--width">
+                    <p class="param-select__heading whitespace">Взрывозащитное исполнение (тип взрывозащиты по ATEX 94/9/EC)</p>
+                    <select class="questnry-def-select" name="Explosion-protective-performance">
+                      <option value="Селект с выбором">Выбрать</option>
+                      <option value="Выбор №2">Выбор №2</option>
+                      <option value="Выбор пункта №3">Выбор пункта №3</option>
+                      <option value="Выбор №4">Выбор №4</option>
+                      <option value="Выбор №5">Выбор №5</option>
+                      <option value="Выбор пункта №6">Выбор пункта №6</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="questnry-section__box">
+                  <p class="fz17sm">Тип торцевого уплотнения</p>
+                  <div class="dfgap16 gap20">
+                    <div class="df gap40 dfcolsm">
+                      <div class="questnry-checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="Type-of-end-seal-one" name="Type-of-end-seal-one" value="Type-of-end-seal-one" checked>
+                        <label for="Type-of-end-seal-one">Одинарное</label>
+                      </div>
+                      <div class="questnry-checkbox">
+                        <input class="custom-checkbox" type="checkbox" id="Type-of-end-seal-tandem" name="Type-of-end-seal-tandem"
+                          value="Type-of-end-seal-tandem" checked>
+                        <label for="Type-of-end-seal-tandem">Двойное Tandem (только для насосов CR/NKG)</label>
+                      </div>
+                    </div>
+                    <div class="questnry-checkbox">
+                      <input class="custom-checkbox" type="checkbox" id="Type-of-end-seal-back-to-back" name="Type-of-end-seal-back-to-back" value="Type-of-end-seal-back-to-back"
+                        checked>
+                      <label for="Type-of-end-seal-back-to-back">Двойное Back-to-back (только для насосов CR/NKG)</label>
+                    </div>
+                    <div class="questnry-checkbox">
+                      <input class="custom-checkbox" type="checkbox" id="Type-of-end-seal-magdrive" name="Type-of-end-seal-magdrive" value="Type-of-end-seal-magdrive"
+                        checked>
+                      <label for="Type-of-end-seal-magdrive">MAGdrive (только для насосов CRN)</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <div class="questnry-section">
+              <h2 class="questnry-heading pb40sm">Дополнительная информация</h2>
+              <div class="questnry-section__inner pb70sm">
+                <div class="dfgap16 gap20 pb40">
+                  <div class="questnry-checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="The-pump-is-above-the-water-level" name="The-pump-is-above-the-water-level" value="The-pump-is-above-the-water-level"
+                      >
+                    <label for="The-pump-is-above-the-water-level">Насос выше уровня воды</label>
+                  </div>
+                  <div class="questnry-checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="The-pump-is-under-the-bay" name="The-pump-is-under-the-bay" value="The-pump-is-under-the-bay"
+                      >
+                    <label for="The-pump-is-under-the-bay">Насос под заливом</label>
+                  </div>
+                  <div class="questnry-checkbox">
+                    <input class="custom-checkbox" type="checkbox" id="The-pump-is-semi-submarine" name="The-pump-is-semi-submarine" value="The-pump-is-semi-submarine"
+                      >
+                    <label for="The-pump-is-semi-submarine">Насос полупогружной</label>
+                  </div>
+                </div>
+                <div class="dg4">
+                  <div class="req-item">
+                    <label for="Aggressive-environment">Z<sub>1</sub></label>
+                    <input type="text" id="Aggressive-environment">
+                  </div>
+                  <div class="req-item">
+                    <label for="Aggressive-environment">Z<sub>2</sub></label>
+                    <input type="text" id="Aggressive-environment">
+                  </div>
+                  <div class="req-item">
+                    <label for="Aggressive-environment">P<sub>1</sub></label>
+                    <input type="text" id="Aggressive-environment">
+                  </div>
+                  <div class="req-item">
+                    <label for="Aggressive-environment">P<sub>2</sub></label>
+                    <input type="text" id="Aggressive-environment">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="questnry-section">
+              <h2 class="questnry-heading questnry-heading--addl">Дополнительная информация</h2>
+              <div>
+                <textarea class="questnry-textarea" placeholder="Укажите дополнительные пожелания"></textarea>
+
+                <div class="attachment-files__wrapper">
+                  <label for="attachment-files">
+                    <a class="attach__up" role="button" aria-disabled="false">
+                      <svg>
+                        <use href="#attachment"></use>
+                      </svg> <span>Прикрепить файл</span></a>
+
+                  </label>
+                  <input type="file" name="file[]" accept=".pdf" id="attachment-files"
+                    style="visibility: hidden; position: absolute;" multiple />
+
+                </div>
+                <div id="files-area">
+                  <span id="filesList">
+                    <ol class="attach__item-list" id="files-names"></ol>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="questnry-footer">
+            <div class="questnry-footer__privacy">
+              <div class="questnry-checkbox">
+                <input class="custom-checkbox" type="checkbox" id="q-f-p" required>
+                <label for="q-f-p">Я согласен на обработку персональных данных </label>
+              </div>
+              <div class="questnry-footer__btns">
+                <button class="filled-btn">Распечатать</button>
+                <button class="filled-btn">Сохранить в world</button>
+                <button class="filled-btn">Отправить</button>
+              </div>
+            </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</section>

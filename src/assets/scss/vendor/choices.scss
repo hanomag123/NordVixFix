@@ -137,6 +137,9 @@
   line-height: 1;
   height: 4rem;
   overflow: hidden;
+  @include breakpoint($sm-bp) {
+    height: 5rem;
+  }
 
   &:hover {
     border-color: $primary;
