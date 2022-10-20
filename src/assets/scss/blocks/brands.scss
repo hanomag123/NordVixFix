@@ -75,6 +75,7 @@
 margin-bottom: 11.3rem;
 display: flex;
 justify-content: center;
+position: relative;
 @include breakpoint($sm-bp) {
     flex-direction: column;
     margin-top: 3.9rem;

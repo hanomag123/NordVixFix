@@ -39,7 +39,6 @@ body {
   font-size: 1.6rem;
   line-height: 1.2;
   color: $black;
-
   background-color: white;
 
   @include breakpoint($sm-bp) {
@@ -140,4 +139,8 @@ svg {
 
 .noScroll {
   overflow: hidden;
+}
+
+*[hidden] {
+  display: none!important;
 }

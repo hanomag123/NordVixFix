@@ -1,15 +1,24 @@
-<header class="header">
-    <form class="search search--hidden">
-        <div class="search__title">Поиск</div>
-        <div class='search__container'>
-            <input class='search__input' type='text'>
-            <button class='search__button'>
-                <svg>
-                    <use href="#search"></use>
-                </svg>
-            </button>
+<div id="exampleModal" hidden>
+    <div class="overlay"></div>
+    <form method="post">
+        <button type="reset" class="close-button"></button>
+        <div class="req-item">
+            <label for="change-env">Имя</label>
+            <input type="text" id="name-form" name="name">
         </div>
+        <div class="req-item">
+            <label for="change-env">Телефон</label>
+            <input type="tel" id="phone-form" name="phone">
+        </div>
+        <div class="req-item">
+            <label for="change-env">E-mail</label>
+            <input type="email" id="email-form" name="email">
+        </div>
+        <button type="submit" class="filled-btn">Оставить заявку</button>
     </form>
+</div>
+
+<header class="header">
     <div class="container">
         <div class="header__inner">
             <div class="header__top">
@@ -53,6 +62,17 @@
                     <a id="hid" class="header__nav-link" href="#">Обратная связь</a>
                 </nav>
                 <div class="header__btns">
+                    <form class="search search--hidden">
+                        <div class="search__title">Поиск</div>
+                        <div class='search__container'>
+                            <input class='search__input' type='text'>
+                            <button class='search__button'>
+                                <svg>
+                                    <use href="#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
                     <button class="header__search">
                         <svg>
                             <use href="#search"></use>
