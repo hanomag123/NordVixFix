@@ -90,12 +90,11 @@ title: Опросные листы
                             <div class="param-select__item param-select__item--width">
                                 <p class="param-select__heading">Фазовые состояния</p>
                                 <select class="questnry-def-select" name="Phase-conditions">
-                                    <option value="Селект с выбором">Выбрать</option>
-                                    <option value="Выбор №2">Выбор №2</option>
-                                    <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                    <option value="Выбор №4">Выбор №4</option>
-                                    <option value="Выбор №5">Выбор №5</option>
-                                    <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                    <option value="none">Выбрать</option>
+                                    <option value="Жидкость">Жидкость</option>
+                                    <option value="Газ">Газ</option>
+                                    <option value="Пульпа">Пульпа</option>
+                                    <option value="Насыщенный">Насыщенный</option>
                                 </select>
                             </div>
                             <div class="req-item">
@@ -135,6 +134,7 @@ title: Опросные листы
                                     <select class="questnry-def-select" name="size-particles">
                                         <option value="Мм">Мм</option>
                                         <option value="См">См</option>
+                                        <option value="См">Мкм</option>
                                     </select>
                                 </div>
                             </div>
@@ -174,12 +174,10 @@ title: Опросные листы
                                                 <input type="number" name="Measured-consumption-min">
                                                 <select class="questnry-def-select"
                                                     name="Measured-consumption-min-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="т/ч">т/ч</option>
+                                                    <option value="кг/ч">кг/ч</option>
+                                                    <option value="м3/ч">м&#179;/ч</option>
+                                                    <option value="нм3/ч">нм&#179;/ч</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -191,12 +189,10 @@ title: Опросные листы
                                                 <input type="number" name="Measured-consumption-av">
                                                 <select class="questnry-def-select"
                                                     name="Measured-consumption-av-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="т/ч">т/ч</option>
+                                                    <option value="кг/ч">кг/ч</option>
+                                                    <option value="м3/ч">м&#179;/ч</option>
+                                                    <option value="нм3/ч">нм&#179;/ч</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -208,12 +204,10 @@ title: Опросные листы
                                                 <input type="number" name="Measured-consumption-max">
                                                 <select class="questnry-def-select"
                                                     name="Measured-consumption-max-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="т/ч">т/ч</option>
+                                                    <option value="кг/ч">кг/ч</option>
+                                                    <option value="м3/ч">м&#179;/ч</option>
+                                                    <option value="нм3/ч">нм&#179;/ч</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -230,12 +224,13 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-pressure-min">
                                                 <select class="questnry-def-select" name="Wednesday-pressure-min-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="Мпа">Мпа</option>
+                                                    <option value="кг/см2">кгс/см&#178;</option>
+                                                    <option value="Мпа">Мпа</option>
+                                                    <option value="кПа">кПа</option>
+                                                    <option value="Па">Па</option>
+                                                    <option value="бар">бар</option>
+                                                    <option value="атм">атм</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -246,12 +241,12 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-pressure-av">
                                                 <select class="questnry-def-select" name="Wednesday-pressure-av-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="Мпа">Мпа</option>
+                                                    <option value="кг/см2">кгс/см&#178;</option>
+                                                    <option value="кПа">кПа</option>
+                                                    <option value="Па">Па</option>
+                                                    <option value="бар">бар</option>
+                                                    <option value="атм">атм</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -262,12 +257,13 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-pressure-max">
                                                 <select class="questnry-def-select" name="Wednesday-pressure-max-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="Мпа">Мпа</option>
+                                                    <option value="кг/см2">кгс/см&#178;</option>
+                                                    <option value="Мпа">Мпа</option>
+                                                    <option value="кПа">кПа</option>
+                                                    <option value="Па">Па</option>
+                                                    <option value="бар">бар</option>
+                                                    <option value="атм">атм</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -284,12 +280,7 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="temperature-env-min">
                                                 <select class="questnry-def-select" name="temperature-env-min-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="℃">℃</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -300,12 +291,7 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="temperature-env-av">
                                                 <select class="questnry-def-select" name="temperature-env-av-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="℃">℃</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -316,12 +302,7 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="temperature-env-max">
                                                 <select class="questnry-def-select" name="temperature-env-max-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="℃">℃</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -337,12 +318,8 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-density-min">
                                                 <select class="questnry-def-select" name="Wednesday-density-min-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="кг/м3">кг/м&#179;</option>
+                                                    <option value="г/см3">г/см&#179;</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -353,12 +330,8 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-density-av">
                                                 <select class="questnry-def-select" name="Wednesday-density-av-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="кг/м3">кг/м&#179;</option>
+                                                    <option value="г/см3">г/см&#179;</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -369,12 +342,8 @@ title: Опросные листы
                                             <div class="sm-select-wrapper  w100 req-inputs__item">
                                                 <input type="number" name="Wednesday-density-max">
                                                 <select class="questnry-def-select" name="Wednesday-density-max-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="кг/м3">кг/м&#179;</option>
+                                                    <option value="г/см3">г/см&#179;</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -391,12 +360,8 @@ title: Опросные листы
                                                 <input type="number" name="Environmental-viscosity-min">
                                                 <select class="questnry-def-select"
                                                     name="Environmental-viscosity-min-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="сПз">сПз</option>
+                                                    <option value="сПз">сСт</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -408,12 +373,8 @@ title: Опросные листы
                                                 <input type="number" name="Environmental-viscosity-av">
                                                 <select class="questnry-def-select"
                                                     name="Environmental-viscosity-av-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="сПз">сПз</option>
+                                                    <option value="сПз">сСт</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -425,12 +386,8 @@ title: Опросные листы
                                                 <input type="number" name="Environmental-viscosity-max">
                                                 <select class="questnry-def-select"
                                                     name="Environmental-viscosity-max-value">
-                                                    <option value="Ед">Ед</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
-                                                    <option value="Гц">Гц</option>
-                                                    <option value="Вт">Вт</option>
-                                                    <option value="Час">Час</option>
+                                                    <option value="сПз">сПз</option>
+                                                    <option value="сПз">сСт</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -458,8 +415,13 @@ title: Опросные листы
                                         <div class="sm-select-wrapper w100">
                                             <input type="text">
                                             <select class="questnry-def-select" name="Permissible-pressure-losses">
-                                                <option value="Мм">Мм</option>
-                                                <option value="См">См</option>
+                                                <option value="Мпа">Мпа</option>
+                                                <option value="кг/см2">кгс/см&#178;</option>
+                                                <option value="Мпа">Мпа</option>
+                                                <option value="кПа">кПа</option>
+                                                <option value="Па">Па</option>
+                                                <option value="бар">бар</option>
+                                                <option value="атм">атм</option>
                                             </select>
                                         </div>
                                     </div>
@@ -524,12 +486,12 @@ title: Опросные листы
                             <div class="param-select__item param-select__item--width">
                                 <p class="param-select__heading">Форма уплотнительной поверхности фланцев</p>
                                 <select class="questnry-def-select" name="The-shape-of-flanges">
-                                    <option value="Селект с выбором">Выбрать</option>
-                                    <option value="Выбор №2">Выбор №2</option>
-                                    <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                    <option value="Выбор №4">Выбор №4</option>
-                                    <option value="Выбор №5">Выбор №5</option>
-                                    <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                    <option value="Плоский">Плоский</option>
+                                    <option value="Шип">Шип</option>
+                                    <option value="Паз">Паз</option>
+                                    <option value="Выступ">Выступ</option>
+                                    <option value="Впадина">Впадина</option>
+                                    <option value="Под кольцевую прокладку">Под кольцевую прокладку</option>
                                 </select>
                             </div>
                             <div class="questnry-customer__item">
@@ -783,12 +745,9 @@ title: Опросные листы
                                 <div class="param-select__item param-select__item--width">
                                     <p class="param-select__heading">Взрывозащита</p>
                                     <select class="questnry-def-select" name="blow-up-defence">
-                                        <option value="Селект с выбором">Выбрать</option>
-                                        <option value="Выбор №2">Выбор №2</option>
-                                        <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                        <option value="Выбор №4">Выбор №4</option>
-                                        <option value="Выбор №5">Выбор №5</option>
-                                        <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                        <option value="Без взрывозащиты">Без взрывозащиты</option>
+                                        <option value="Взрывонепроницаемая оболочка">Взрывонепроницаемая оболочка</option>
+                                        <option value="Искробезопасная цепь">Искробезопасная цепь</option>
                                     </select>
                                 </div>
                                 <div class="req-item">
@@ -851,12 +810,13 @@ title: Опросные листы
                                     <div class="param-select__item param-select__item--width">
                                         <p class="param-select__heading">Тип цифрового сигнала</p>
                                         <select class="questnry-def-select" name="Output-signals-type">
-                                            <option value="Селект с выбором">Выбрать</option>
-                                            <option value="Выбор №2">Выбор №2</option>
-                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                            <option value="Выбор №4">Выбор №4</option>
-                                            <option value="Выбор №5">Выбор №5</option>
-                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                            <option value="none">Выбрать</option>
+                                            <option value="ModBus RS485">ModBus RS485</option>
+                                            <option value="Foundation Fieldbus">Foundation Fieldbus</option>
+                                            <option value="Profinet">Profinet</option>
+                                            <option value="Profibus PA">Profibus PA</option>
+                                            <option value="Profibus DP">Profibus DP</option>
+                                            <option value="WirelessHART">WirelessHART</option>
                                         </select>
                                     </div>
                                 </div>
@@ -864,36 +824,30 @@ title: Опросные листы
                                     <div class="param-select__item param-select__item--width">
                                         <p class="param-select__heading">Класс пылевлагозащиты: </p>
                                         <select class="questnry-def-select" name="Output-signals-polumelastic-protection">
-                                            <option value="Селект с выбором">Выбрать</option>
-                                            <option value="Выбор №2">Выбор №2</option>
-                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                            <option value="Выбор №4">Выбор №4</option>
-                                            <option value="Выбор №5">Выбор №5</option>
-                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                            <option value="none">Выбрать</option>
+                                            <option value="IP68">IP68</option>
+                                            <option value="IP67">IP67</option>
+                                            <option value="IP66">IP66</option>
                                         </select>
                                     </div>
                                     <div></div>
                                     <div class="param-select__item param-select__item--width">
                                         <p class="param-select__heading">Материал корпуса сенсора и фланцев:</p>
                                         <select class="questnry-def-select" name="Output-signals-material-of-sensor-and-flanges">
-                                            <option value="Селект с выбором">Выбрать</option>
-                                            <option value="Выбор №2">Выбор №2</option>
-                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                            <option value="Выбор №4">Выбор №4</option>
-                                            <option value="Выбор №5">Выбор №5</option>
-                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                            <option value="none">Выбрать</option>
+                                            <option value="Нержавеющая сталь">Нержавеющая сталь</option>
+                                            <option value="Аллюминий">Аллюминий</option>
+                                            <option value="Ст20">Ст20</option>
+                                            <option value="09Г2С">09Г2С</option>
                                         </select>
                                     </div>
                                     <div class="probka"></div>
                                     <div class="param-select__item param-select__item--width">
                                         <p class="param-select__heading">Материал корпуса преобразователя: </p>
-                                        <select class="questnry-def-select" name="Output-signals-The material-of-the-converter-case">
-                                            <option value="Селект с выбором">Выбрать</option>
-                                            <option value="Выбор №2">Выбор №2</option>
-                                            <option value="Выбор пункта №3">Выбор пункта №3</option>
-                                            <option value="Выбор №4">Выбор №4</option>
-                                            <option value="Выбор №5">Выбор №5</option>
-                                            <option value="Выбор пункта №6">Выбор пункта №6</option>
+                                        <select class="questnry-def-select" name="Output-signals-The-material-of-the-converter-case">
+                                            <option value="none">Выбрать</option>
+                                            <option value="Нержавеющая сталь">Нержавеющая сталь</option>
+                                            <option value="Аллюминий">Аллюминий</option>
                                         </select>
                                     </div>
                                 </div>
