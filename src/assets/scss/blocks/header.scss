@@ -1022,6 +1022,8 @@ header {
   
       #categoryTab3 {
         flex-direction: unset;
+
+        
       }
 
       .lettersHelp {
@@ -1069,7 +1071,13 @@ header {
               color: #FFFFFF;
             }
           }
+
+          .Fix {
+            padding-right: 5.5rem;
+          }
         }
+
+        
 
         .menuControlTitle {
           display: block;
@@ -1115,6 +1123,11 @@ header {
             line-height: 2rem;
             color: #FFFFFF;
             margin-bottom: 1.6rem;
+          }
+
+          .Help {
+            font-size: 4rem;
+            line-height: 5rem;
           }
 
           .text {
@@ -1362,6 +1375,14 @@ header {
         display: flex;
       }
 
+      #categoryTab3 {
+        flex-direction: unset;
+      }
+
+      .lettersHelp {
+        width: 50%;
+      }
+
     }
 
 
@@ -1395,6 +1416,8 @@ header {
             display: none;
           }
 
+          
+
           .titleText {
             display: flex;
             align-items: center;
@@ -1421,6 +1444,8 @@ header {
                 transform: rotate(45deg);
               }    
           }
+
+          
 
           .titleTextHidden {
             display: none;
