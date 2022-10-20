@@ -725,50 +725,103 @@ if (window.matchMedia("(max-width: 920px)").matches) {
 
 
 const searchInput = document.querySelector('.searchBrand')
-const capitalLettersBlock = document.querySelectorAll('.capitalLetter p')
+// const capitalLettersBlock = document.querySelectorAll('.capitalLetter p')
 const mainContent = document.querySelector('.mainContent')
+const nothingText = document.querySelector('.nothing')
+let alltext = []
+if (mainContent) {
+  alltext = [...mainContent.querySelectorAll('p, a')]
+}
 
-const heightContent = mainContent.getBoundingClientRect().height
-const searchFunc = () => {
-  mainContent.style.setProperty('height', heightContent + 'px')
-  const search = event.target.value.toLowerCase()
-  const firstLetter = search[0]  
-  if (firstLetter && search.length === 1) {
-    capitalLettersBlock.forEach(el => {
-      if (el.innerHTML.toLowerCase() === firstLetter) {
-        el.parentElement.nextElementSibling.hidden = false
-        el.parentElement.hidden = false
-      } else {
-        el.parentElement.hidden = true
-        el.parentElement.nextElementSibling.hidden = true
-      }
-    })
-    const otherText = document.querySelectorAll('.oterText:not([hidden]) a')
-    otherText.forEach(el => {
-      if (el.innerHTML[0].toLowerCase() === firstLetter) {
-        el.hidden = false
-      } else {
-        el.hidden = true
-      }
-    })
-  } else if (search.length > 1) {
-    const otherText = document.querySelectorAll('.oterText:not([hidden]) a')
-    otherText.forEach(el => {
-      const re = new RegExp(`^${search}`, 'gim');
-      if (re.test(el.innerHTML)) {
-        el.hidden = false
-      } else {
-        el.hidden = true
+const searchFunc = (event) => {
+  const heightContent = mainContent.getBoundingClientRect().height
+  const search = event.target.value
+  const re = new RegExp(`^${search}.*`, 'i');
+  if (search.length === 0) {
+    mainContent.style.setProperty('height', 'auto')
+    nothingText.hidden = true
+    alltext.forEach(el => {
+      el.hidden = false
+      if (el.localName === 'p') {
+        el.parentNode.hidden = false
       }
     })
   } else {
-    capitalLettersBlock.forEach(el => {
-      el.parentElement.hidden = false
-      el.parentElement.nextElementSibling.hidden = false
-    })
-    mainContent.style.setProperty('height', 'auto')
+    mainContent.style.setProperty('height', heightContent + 'px')
+    const newArr = alltext.filter((el) => {
+      if (el.innerHTML.toLowerCase() === search[0].toLowerCase()) {
+        el.hidden = false
+        if (el.localName === 'p') {
+          el.parentNode.hidden = false
+        }
+        return el
+      } else if (!re.test(el.innerHTML)) {
+        el.hidden = true
+        if (el.localName === 'p') {
+          el.parentNode.hidden = true
+        }
+      } else {
+        el.hidden = false
+        if (el.localName === 'p') {
+          el.parentNode.hidden = false
+        }
+        return el
+      }
+    });
+    console.log(newArr.length)
+    if (newArr.length === 1) {
+      newArr[0].hidden = true
+      newArr[0].parentNode.hidden = true
+      nothingText.hidden = false
+    } else {
+      nothingText.hidden = true
+    }
   }
+  // console.log(search)
+
 }
+
+
+// const searchFunc = () => {
+//   mainContent.style.setProperty('height', heightContent + 'px')
+//   const search = event.target.value.toLowerCase()
+//   const firstLetter = search[0]  
+//   if (firstLetter && search.length === 1) {
+//     capitalLettersBlock.forEach(el => {
+//       if (el.innerHTML.toLowerCase() === firstLetter) {
+//         el.parentElement.nextElementSibling.hidden = false
+//         el.parentElement.hidden = false
+//       } else {
+//         el.parentElement.hidden = true
+//         el.parentElement.nextElementSibling.hidden = true
+//       }
+//     })
+//     const otherText = document.querySelectorAll('.oterText:not([hidden]) a')
+//     otherText.forEach(el => {
+//       if (el.innerHTML[0].toLowerCase() === firstLetter) {
+//         el.hidden = false
+//       } else {
+//         el.hidden = true
+//       }
+//     })
+//   } else if (search.length > 1) {
+//     const otherText = document.querySelectorAll('.oterText:not([hidden]) a')
+//     otherText.forEach(el => {
+//       const re = new RegExp(`^${search}`, 'gim');
+//       if (re.test(el.innerHTML)) {
+//         el.hidden = false
+//       } else {
+//         el.hidden = true
+//       }
+//     })
+//   } else {
+//     capitalLettersBlock.forEach(el => {
+//       el.parentElement.hidden = false
+//       el.parentElement.nextElementSibling.hidden = false
+//     })
+//     mainContent.style.setProperty('height', 'auto')
+//   }
+// }
 
 if (searchInput) {
   searchInput.addEventListener('input', searchFunc)
