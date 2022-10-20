@@ -310,6 +310,7 @@
 
 .choices__item--selectable {
   cursor: pointer;
+  white-space: nowrap;
 }
 
 .choices__item--disabled {

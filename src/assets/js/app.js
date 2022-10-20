@@ -244,6 +244,73 @@ document.addEventListener("DOMContentLoaded", () => {
 
  }
 
+ const form = document.querySelector('#exampleModal')
+
+ if (form) {
+  const overlay = form.querySelector('.overlay')
+  const closeButton = form.querySelector('.close-button')
+
+  const arr = [overlay, closeButton]
+
+  arr.forEach(el => {
+    el.addEventListener('click', function closeForm() {
+      form.hidden = true
+      enableScroll()
+    })
+  })
+ }
+
+ const orderBtn = document.querySelectorAll('.order-btn')
+
+ if (orderBtn.length > 0 && form) {
+  orderBtn.forEach(el => {
+    el.addEventListener('click', () => {
+      form.hidden = false
+      disableScroll()
+    })
+  })
+ }
+
+
+ var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
+    get: function () { supportsPassive = true; } 
+  }));
+} catch(e) {}
+
+var wheelOpt = supportsPassive ? { passive: false } : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// call this to Disable
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+// call this to Enable
+function enableScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false);
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
+  window.removeEventListener('touchmove', preventDefault, wheelOpt);
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
 
 
   let header = document.querySelector('.header')
@@ -654,15 +721,57 @@ if (window.matchMedia("(max-width: 920px)").matches) {
     })
   }
 
-
-
-  
-
-
-
-  
-
 }
 
+
+const searchInput = document.querySelector('.searchBrand')
+const capitalLettersBlock = document.querySelectorAll('.capitalLetter p')
+const mainContent = document.querySelector('.mainContent')
+
+const heightContent = mainContent.getBoundingClientRect().height
+const searchFunc = () => {
+  mainContent.style.setProperty('height', heightContent + 'px')
+  const search = event.target.value.toLowerCase()
+  const firstLetter = search[0]  
+  if (firstLetter && search.length === 1) {
+    capitalLettersBlock.forEach(el => {
+      if (el.innerHTML.toLowerCase() === firstLetter) {
+        el.parentElement.nextElementSibling.hidden = false
+        el.parentElement.hidden = false
+      } else {
+        el.parentElement.hidden = true
+        el.parentElement.nextElementSibling.hidden = true
+      }
+    })
+    const otherText = document.querySelectorAll('.oterText:not([hidden]) a')
+    otherText.forEach(el => {
+      if (el.innerHTML[0].toLowerCase() === firstLetter) {
+        el.hidden = false
+      } else {
+        el.hidden = true
+      }
+    })
+  } else if (search.length > 1) {
+    const otherText = document.querySelectorAll('.oterText:not([hidden]) a')
+    otherText.forEach(el => {
+      const re = new RegExp(`^${search}`, 'gim');
+      if (re.test(el.innerHTML)) {
+        el.hidden = false
+      } else {
+        el.hidden = true
+      }
+    })
+  } else {
+    capitalLettersBlock.forEach(el => {
+      el.parentElement.hidden = false
+      el.parentElement.nextElementSibling.hidden = false
+    })
+    mainContent.style.setProperty('height', 'auto')
+  }
+}
+
+if (searchInput) {
+  searchInput.addEventListener('input', searchFunc)
+}
 
 });
