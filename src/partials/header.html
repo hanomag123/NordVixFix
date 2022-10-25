@@ -1,24 +1,15 @@
-<div id="exampleModal" hidden>
-    <div class="overlay"></div>
-    <form>
-        <button type="reset" class="close-button"></button>
-        <div class="req-item">
-            <label for="change-env">Имя</label>
-            <input type="text" id="name-form" name="name">
-        </div>
-        <div class="req-item">
-            <label for="change-env">Телефон</label>
-            <input type="tel" id="phone-form" name="phone">
-        </div>
-        <div class="req-item">
-            <label for="change-env">E-mail</label>
-            <input type="email" id="email-form" name="email">
-        </div>
-        <button type="submit" class="filled-btn">Оставить заявку</button>
-    </form>
-</div>
-
 <header class="header">
+    <form class="search search--hidden">
+        <div class="search__title">Поиск</div>
+        <div class='search__container'>
+            <input class='search__input' type='text'>
+            <button class='search__button'>
+                <svg>
+                    <use href="#search"></use>
+                </svg>
+            </button>
+        </div>
+    </form>
     <div class="container">
         <div class="header__inner">
             <div class="header__top">
@@ -62,17 +53,6 @@
                     <a id="hid" class="header__nav-link" href="#">Обратная связь</a>
                 </nav>
                 <div class="header__btns">
-                    <form class="search search--hidden">
-                        <div class="search__title">Поиск</div>
-                        <div class='search__container'>
-                            <input class='search__input' type='text'>
-                            <button class='search__button'>
-                                <svg>
-                                    <use href="#search"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
                     <button class="header__search">
                         <svg>
                             <use href="#search"></use>
@@ -99,7 +79,6 @@
             <div class="menuTabsContainer">
                 <div class="generalTabs">
                     <button class="changeCategory" data-tab="#categoryTab1">КАТЕГОРИИ</button>
-                    <!-- <button class="changeCategory" data-tab="#categoryTab2">ОТРАСЛИ</button> -->
                     <button class="changeCategory" data-tab="#categoryTab3">БРЕНДЫ</button>
                 </div>
                 <div id="categoryTab1" class="menuTabs">
@@ -262,166 +241,6 @@
                     </div>
                 </div>
 
-                <!-- <div id="categoryTab2" class="menuTabs">
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab1" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                                <svg>
-                                    <use href="#wheel"></use>
-                                </svg>
-                                <p>222222222222222222222222</p>
-                            </div>
-                            
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab2" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#control"></use>
-                            </svg>
-                            <p>Автоматизация и роботизация</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab3" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#printer"></use>
-                            </svg>
-                            <p>Метрологическое и лабораторно оборудование</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab4" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#controllPanel"></use>
-                            </svg>
-                            <p>Аналитическое оборудование</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab5" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#gauge"></use>
-                            </svg>
-                            <p>Неразрушащий контроль</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab6" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#motor"></use>
-                            </svg>
-                            <p>Запорно-регулирующая арматура</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab7" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#meter"></use>
-                            </svg>
-                            <p>Насосное и компрессорное оборудование</p>
-                            </div> 
-                            <div class="arrow"></div>     
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab8" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#pump"></use>
-                            </svg>
-                            <p>Оптические системы и компоненты</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab9" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#bending"></use>
-                            </svg>
-                            <p>Электротехническое оборудование</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab10" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#wheel"></use>
-                            </svg>
-                            <p>Гидравилика и пневматика</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab11" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#control"></use>
-                            </svg>
-                            <p>Мехатроника</p>
-                            </div>  
-                            <div class="arrow"></div>   
-                        </button>
-                    </div>
-                    <div class="helpArrowContainer" >
-                        <div class="arrowBack"></div>
-                        <button data-tab="#smenuTab12" class="menuControlTitle" >
-                            <div class="imgTextContainer">
-                                
-                            <svg>
-                                <use href="#bending"></use>
-                            </svg>
-                            <p>Станочное оборудование</p>
-                            </div>
-                            <div class="arrow"></div>
-                        </button>
-                    </div>
-                </div> -->
-
 
 
                 <div id="categoryTab3" class="menuTabs">
@@ -429,7 +248,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab1" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                     <p>A</p>
                                 </div>
@@ -440,7 +259,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab2" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>B</p>
@@ -451,7 +270,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab3" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>C</p>
@@ -462,7 +281,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab4" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>E</p>
@@ -473,7 +292,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab5" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>F</p>
@@ -484,7 +303,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab6" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>G</p>
@@ -495,7 +314,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab7" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>H</p>
@@ -506,7 +325,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab8" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>I</p>
@@ -517,7 +336,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab9" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>J</p>
@@ -528,7 +347,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab10" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>K</p>
@@ -539,7 +358,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab11" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>L</p>
@@ -550,7 +369,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>M</p>
@@ -564,7 +383,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>N</p>
@@ -576,7 +395,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>O</p>
@@ -588,7 +407,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>P</p>
@@ -600,7 +419,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>R</p>
@@ -612,7 +431,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>S</p>
@@ -624,7 +443,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>T</p>
@@ -635,7 +454,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>U</p>
@@ -646,7 +465,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>W</p>
@@ -657,7 +476,7 @@
                         <div class="helpArrowContainer" >
                             <div class="arrowBack"></div>
                             <button data-tab="#wmenuTab12" class="menuControlTitle" >
-                                <div class="imgTextContainer Fix">
+                                <div class="imgTextContainer">
                                     
                                 
                                 <p>Y</p>
@@ -672,1296 +491,6 @@
 
 
             </div>
-
-
-
-            
-
-                
-            <!-- <div class="menuContentContainer" >
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn1" >
-                                    
-                                    
-                                    <p>Расходомеры</p>
-                                    <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Кориолисовые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Электромагнитные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Вихревые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ультразвуковые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Тремомассовые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Мультифазные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ротаметры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле потока</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Первичные элементы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для открытых каналов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для безнапорных трубопроводов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn2" >
-                                    
-                                    
-                                        <p>Плотномеры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Вибрационные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ультразвуковые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Гравитационные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Микроволновые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn3" >
-                                    
-                                    
-                                        <p>Измерение давления</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Датчики давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Манометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Мембранные разделители</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Клапаны и защитные устройства</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары для монтажа</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn4" >
-                                    
-                                    
-                                        <p>Измерение температуры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Механчиеские термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термопары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термометры сопротивления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи темепратуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термометры с электроконтактами</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле температуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Контроллеры температуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Поверхностные термопары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Многозонные термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn5" >
-                                    
-                                    
-                                        <p>Измерение уровня</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Уровнемеры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле уровня</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn6" >
-                                    
-                                    
-                                        <p>Измерение силы</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Тензодатчики</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Тензодатчики торсионного типа</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Осевые датчики силы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи сжатия</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи силы растяжения/сжатия</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Датчики силы натяжения</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Специальные преобразователи</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Балонные тензодатчики</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Датчики наклона</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Электронные модули</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn7" >
-                                    
-                                    
-                                        <p>Измерение влажности</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Анализаторы влажности и точки росы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Портативные гигрометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Конденсационные (зеркальные) гигрометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Относительная влажность</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Инфракрасные онлайн датчики влажности</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Микроволновые анализаторы влажности</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn8" >
-                                    
-                                    
-                                        <p>Измерительное оборудование</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Портативные сервисные приборы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для тестирования волоконно-оптических линий связи</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Высокоточные лабораторные приборы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn9" >
-                                    
-                                    
-                                        <p>Калибровочная техника</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Переносные калибраторы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Высокоточные средства измерения давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Контроллеры давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Источники создания давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Образцовые термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Переносные термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термостаты</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Портативные калибраторы темепаратуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Калибраторы электрических сигналов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Оснастка</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="menuContentContainer" >
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn11" >
-                                    
-                                    
-                                        <p>Расходомеры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>2222222</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Электромагнитные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Вихревые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ультразвуковые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Тремомассовые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Мультифазные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ротаметры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле потока</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Первичные элементы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для открытых каналов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для безнапорных трубопроводов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn12" >
-                                    
-                                    
-                                        <p>Плотномеры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Вибрационные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ультразвуковые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Гравитационные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Микроволновые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn13" >
-                                    
-                                    
-                                        <p>Измерение давления</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Датчики давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Манометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Мембранные разделители</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Клапаны и защитные устройства</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары для монтажа</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn14" >
-                                    
-                                    
-                                        <p>Измерение температуры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Механчиеские термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термопары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термометры сопротивления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи темепратуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термометры с электроконтактами</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле температуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Контроллеры температуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Поверхностные термопары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Многозонные термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn15" >
-                                    
-                                    
-                                        <p>Измерение уровня</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Уровнемеры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле уровня</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer">
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn16">
-                                    
-                                    
-                                        <p>Измерение силы</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Тензодатчики</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Тензодатчики торсионного типа</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Осевые датчики силы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи сжатия</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи силы растяжения/сжатия</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Датчики силы натяжения</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Специальные преобразователи</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Балонные тензодатчики</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Датчики наклона</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Электронные модули</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn17" >
-                                    
-                                    
-                                        <p>Измерение влажности</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Анализаторы влажности и точки росы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Портативные гигрометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Конденсационные (зеркальные) гигрометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Относительная влажность</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Инфракрасные онлайн датчики влажности</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Микроволновые анализаторы влажности</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn18" >
-                                    
-                                    
-                                        <p>Измерительное оборудование</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Портативные сервисные приборы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для тестирования волоконно-оптических линий связи</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Высокоточные лабораторные приборы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn19">
-                                    
-                                    
-                                        <p>Калибровочная техника</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Переносные калибраторы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Высокоточные средства измерения давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Контроллеры давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Источники создания давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Образцовые термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Переносные термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термостаты</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Портативные калибраторы темепаратуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Калибраторы электрических сигналов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Оснастка</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-                <div class="menuContentContainer" >
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer">
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn21">
-                                    
-                                    
-                                        <p>Расходомеры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text">
-                                <a href="#">
-                                    <p>333333333</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Электромагнитные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Вихревые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ультразвуковые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Тремомассовые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Мультифазные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ротаметры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле потока</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Первичные элементы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для открытых каналов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для безнапорных трубопроводов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-
-                            <div class="arrowBackTitleContainer">
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn22" >
-                                    
-                                    
-                                        <p>Плотномеры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-
-                            <div class="text">
-                                <a href="#">
-                                    <p>Вибрационные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Ультразвуковые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Гравитационные</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Микроволновые</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn23" >
-                                    
-                                    
-                                        <p>Измерение давления</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Датчики давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Манометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Мембранные разделители</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Клапаны и защитные устройства</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары для монтажа</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-    
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn24" >
-                                    
-                                    
-                                        <p>Измерение температуры</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Механчиеские термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термопары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термометры сопротивления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи темепратуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термометры с электроконтактами</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле температуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Контроллеры температуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Поверхностные термопары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Многозонные термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn25" >
-                                    
-                                    
-                                        <p>Измерение уровня</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Уровнемеры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Реле уровня</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn26" >
-                                    
-                                    
-                                        <p>Измерение силы</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Тензодатчики</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Тензодатчики торсионного типа</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Осевые датчики силы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи сжатия</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Преобразователи силы растяжения/сжатия</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Датчики силы натяжения</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Специальные преобразователи</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Балонные тензодатчики</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Датчики наклона</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Электронные модули</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Аксессуары</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="column">
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn27" >
-                                    
-                                    
-                                        <p>Измерение влажности</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Анализаторы влажности и точки росы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Портативные гигрометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Конденсационные (зеркальные) гигрометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Относительная влажность</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Инфракрасные онлайн датчики влажности</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Микроволновые анализаторы влажности</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer" >
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn28" >
-                                    
-                                    
-                                        <p>Измерительное оборудование</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text" >
-                                <a href="#">
-                                    <p>Портативные сервисные приборы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Для тестирования волоконно-оптических линий связи</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Высокоточные лабораторные приборы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="textContainer">
-                            <div class="arrowBackTitleContainer">
-                                <div class="arrowBack2" >
-                                </div>
-                        
-                                <div class="titleText" data-tab="#titleBtn29" >
-                                    
-                                    
-                                        <p>Калибровочная техника</p>
-                                        <div class="arrow"></div>
-                                    
-                                    
-                                </div>
-                            </div>
-                            <div class="text">
-                                <a href="#">
-                                    <p>Переносные калибраторы</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Высокоточные средства измерения давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Контроллеры давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Источники создания давления</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Образцовые термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Переносные термометры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Термостаты</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Портативные калибраторы темепаратуры</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Калибраторы электрических сигналов</p>
-                                    <div class="arrow"></div>
-                                </a>
-                                <a href="#">
-                                    <p>Оснастка</p>
-                                    <div class="arrow"></div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-
-                
-
-                
-
-
-
-
 
 
 
@@ -2382,15 +911,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
 
                 <div class="menuContentContainer" >
                     <div class="column">
@@ -5039,7 +3559,7 @@
                                 </div>
                             </div>
 
-                            <div class="text" 2">
+                            <div class="text">
                                 <a href="#">
                                     <p>Вибрационные</p>
                                     <div class="arrow"></div>
@@ -5072,7 +3592,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="text" 3">
+                            <div class="text">
                                 <a href="#">
                                     <p>Датчики давления</p>
                                     <div class="arrow"></div>
@@ -5116,7 +3636,7 @@
                                     
                                 </div>
                             </div>
-                            <div class="text" 4">
+                            <div class="text">
                                 <a href="#">
                                     <p>Механчиеские термометры</p>
                                     <div class="arrow"></div>
@@ -5803,98 +4323,6 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <!-- 2 menu -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                 <div class="menuContentContainer" >
@@ -7191,7 +5619,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn31" >
+                                <div class="titleText" data-tab="#stitleBtn31" >
                                     
                                     
                                         <p>Aalborg</p>
@@ -7208,7 +5636,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn32" >
+                                <div class="titleText" data-tab="#stitleBtn32" >
                                     
                                     
                                         <p>AccuMac</p>
@@ -7242,7 +5670,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn41" >
+                                <div class="titleText" data-tab="#stitleBtn41" >
                                     
                                     
                                         <p>Bacharach</p>
@@ -7259,7 +5687,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn42">
+                                <div class="titleText" data-tab="#stitleBtn42">
                                     
                                     
                                         <p>Bently Nevada</p>
@@ -7294,7 +5722,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn51" >
+                                <div class="titleText" data-tab="#stitleBtn51" >
                                     
                                     
                                         <p>CHINO</p>
@@ -7311,7 +5739,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn52" >
+                                <div class="titleText" data-tab="#stitleBtn52" >
                                     
                                     
                                         <p>Core Sensors</p>
@@ -7346,7 +5774,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn61" >
+                                <div class="titleText" data-tab="#stitleBtn61" >
                                     
                                     
                                         <p>Eaton FHF Telephones</p>
@@ -7363,7 +5791,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn62" >
+                                <div class="titleText" data-tab="#stitleBtn62" >
                                     
                                     
                                         <p>Endress+Hauser</p>
@@ -7395,7 +5823,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn71" >
+                                <div class="titleText" data-tab="#stitleBtn71" >
                                     
                                     
                                         <p>Flowline</p>
@@ -7412,7 +5840,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn72" >
+                                <div class="titleText" data-tab="#stitleBtn72" >
                                     
                                     
                                         <p>Fluke Calibration</p>
@@ -7447,7 +5875,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn81" >
+                                <div class="titleText" data-tab="#stitleBtn81" >
                                     
                                     
                                         <p>Graphic Controls</p>
@@ -7479,7 +5907,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn91" >
+                                <div class="titleText" data-tab="#stitleBtn91" >
                                     
                                     
                                         <p>Horiba</p>
@@ -7515,7 +5943,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn101" >
+                                <div class="titleText" data-tab="#stitleBtn101" >
                                     
                                     
                                         <p>Ialborg</p>
@@ -7532,7 +5960,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn102" >
+                                <div class="titleText" data-tab="#stitleBtn102" >
                                     
                                     
                                         <p>IccuMac</p>
@@ -7549,7 +5977,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn103" >
+                                <div class="titleText" data-tab="#stitleBtn103" >
                                     
                                     
                                         <p>Iacharach</p>
@@ -7568,7 +5996,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn104" >
+                                <div class="titleText" data-tab="#stitleBtn104" >
                                     
                                     
                                         <p>Iently Nevada</p>
@@ -7600,7 +6028,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn111">
+                                <div class="titleText" data-tab="#stitleBtn111">
                                     
                                     
                                         <p>JHINO</p>
@@ -7617,7 +6045,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn112">
+                                <div class="titleText" data-tab="#stitleBtn112">
                                     
                                     
                                         <p>Jore Sensors</p>
@@ -7634,7 +6062,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#stitleBtn113" >
+                                <div class="titleText" data-tab="#stitleBtn113" >
                                     
                                     
                                         <p>Jaton FHF Telephones</p>
@@ -7658,7 +6086,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn1" >
+                                <div class="titleText" data-tab="#wtitleBtn1" >
                                     
                                     
                                         <p>Kndress+Hauser</p>
@@ -7675,7 +6103,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn2" >
+                                <div class="titleText" data-tab="#wtitleBtn2" >
                                     
                                     
                                         <p>Klowline</p>
@@ -7692,7 +6120,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn3" >
+                                <div class="titleText" data-tab="#wtitleBtn3" >
                                     
                                     
                                         <p>Kluke Calibration</p>
@@ -7728,7 +6156,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn11" >
+                                <div class="titleText" data-tab="#wtitleBtn11" >
                                     
                                     
                                         <p>Lraphic Controls</p>
@@ -7745,7 +6173,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#swtitleBtn12" >
+                                <div class="titleText" data-tab="#swtitleBtn12" >
                                     
                                     
                                         <p>Loriba</p>
@@ -7780,7 +6208,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn21">
+                                <div class="titleText" data-tab="#wtitleBtn21">
                                     
                                     
                                         <p>Malborg</p>
@@ -7797,7 +6225,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn22">
+                                <div class="titleText" data-tab="#wtitleBtn22">
                                     
                                     
                                         <p>MccuMac</p>
@@ -7814,7 +6242,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn23">
+                                <div class="titleText" data-tab="#wtitleBtn23">
                                     
                                     
                                         <p>Macharach</p>
@@ -7847,7 +6275,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn31">
+                                <div class="titleText" data-tab="#wtitleBtn31">
                                     
                                     
                                         <p>Nently Nevada</p>
@@ -7864,7 +6292,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn32">
+                                <div class="titleText" data-tab="#wtitleBtn32">
                                     
                                     
                                         <p>NHINO</p>
@@ -7881,7 +6309,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn33">
+                                <div class="titleText" data-tab="#wtitleBtn33">
                                     
                                     
                                         <p>Nore Sensors</p>
@@ -7897,15 +6325,6 @@
 
                 </div>
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <div class="menuContentContainer" >
                     <div class="column">
                         <div class="textContainer">
@@ -7913,7 +6332,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn41">
+                                <div class="titleText" data-tab="#wtitleBtn41">
                                     
                                     
                                         <p>Oaton FHF Telephones</p>
@@ -7930,7 +6349,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn42">
+                                <div class="titleText" data-tab="#wtitleBtn42">
                                     
                                     
                                         <p>Ondress+Hauser</p>
@@ -7947,7 +6366,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn43">
+                                <div class="titleText" data-tab="#wtitleBtn43">
                                     
                                     
                                         <p>Olowline</p>
@@ -7980,7 +6399,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn51">
+                                <div class="titleText" data-tab="#wtitleBtn51">
                                     
                                     
                                         <p>Pluke Calibration</p>
@@ -7997,7 +6416,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn52">
+                                <div class="titleText" data-tab="#wtitleBtn52">
                                     
                                     
                                         <p>Praphic Controls</p>
@@ -8014,7 +6433,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn53">
+                                <div class="titleText" data-tab="#wtitleBtn53">
                                     
                                     
                                         <p>Poriba</p>
@@ -8033,7 +6452,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn54">
+                                <div class="titleText" data-tab="#wtitleBtn54">
                                     
                                     
                                         <p>Palborg</p>
@@ -8051,16 +6470,6 @@
                 </div>
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <div class="menuContentContainer" >
                     <div class="column">
                         <div class="textContainer">
@@ -8068,7 +6477,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn61">
+                                <div class="titleText" data-tab="#wtitleBtn61">
                                     
                                     
                                         <p>RccuMac</p>
@@ -8085,7 +6494,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn62">
+                                <div class="titleText" data-tab="#wtitleBtn62">
                                     
                                     
                                         <p>Racharach</p>
@@ -8102,7 +6511,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn63">
+                                <div class="titleText" data-tab="#wtitleBtn63">
                                     
                                     
                                         <p>Rently Nevada</p>
@@ -8120,7 +6529,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn64">
+                                <div class="titleText" data-tab="#wtitleBtn64">
                                     
                                     
                                         <p>RccuMac</p>
@@ -8136,7 +6545,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn65">
+                                <div class="titleText" data-tab="#wtitleBtn65">
                                     
                                     
                                         <p>Racharach</p>
@@ -8152,7 +6561,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn66">
+                                <div class="titleText" data-tab="#wtitleBtn66">
                                     
                                     
                                         <p>Rently Nevada</p>
@@ -8167,14 +6576,7 @@
                     
 
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
+
                 
                 <div class="menuContentContainer" >
                     <div class="column">
@@ -8183,7 +6585,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn71">
+                                <div class="titleText" data-tab="#wtitleBtn71">
                                     
                                     
                                         <p>SHINO</p>
@@ -8200,16 +6602,12 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn72">
-                                    
-                                    
+                                <div class="titleText" data-tab="#wtitleBtn72">     
                                         <p>Sore Sensors</p>
                                         <div class="arrow"></div>
-                                    
-                                    
+
                                 </div>
                             </div>
-                
 
                         </div>
                         <div class="textContainer">
@@ -8217,7 +6615,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn73">
+                                <div class="titleText" data-tab="#wtitleBtn73">
                                     
                                     
                                         <p>Saton FHF Telephones</p>
@@ -8234,15 +6632,6 @@
                 </div>
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <div class="menuContentContainer" >
                     <div class="column">
                         <div class="textContainer">
@@ -8250,7 +6639,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn81">
+                                <div class="titleText" data-tab="#wtitleBtn81">
                                     
                                     
                                         <p>Tndress+Hauser</p>
@@ -8264,17 +6653,7 @@
 
                     </div>
                 
-
                 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 
                 <div class="menuContentContainer">
                     <div class="column">
@@ -8283,7 +6662,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn91">
+                                <div class="titleText" data-tab="#wtitleBtn91">
                                     
                                     
                                         <p>Ulowline</p>
@@ -8301,17 +6680,6 @@
                 </div>
                 
                 
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
                 <div class="menuContentContainer">
                     <div class="column">
                         <div class="textContainer">
@@ -8319,7 +6687,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn101" >
+                                <div class="titleText" data-tab="#wtitleBtn101" >
                                     
                                     
                                         <p>Wluke Calibration</p>
@@ -8336,30 +6704,20 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn102" >
-                                    
-                                    
+                                <div class="titleText" data-tab="#wtitleBtn102" > 
                                         <p>Wraphic Controls</p>
                                         <div class="arrow"></div>
-                                    
-                                    
                                 </div>
                             </div>
-                
-
                         </div>
                         <div class="textContainer">
                             <div class="arrowBackTitleContainer" >
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn103" >
-                                    
-                                    
+                                <div class="titleText" data-tab="#wtitleBtn103" >
                                         <p>Wluke Calibration</p>
                                         <div class="arrow"></div>
-                                    
-                                    
                                 </div>
                             </div>
 
@@ -8372,30 +6730,16 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn104" >
-                                    
-                                    
+                                <div class="titleText" data-tab="#wtitleBtn104" >
                                         <p>Wraphic Controls</p>
                                         <div class="arrow"></div>
-                                    
-                                    
                                 </div>
                             </div>
 
                         </div>
 
                     </div>
-                    
-
-                </div>
-                
-                
-                
-                
-                
-                
-                
-                
+                </div>      
                 
                 <div class="menuContentContainer">
                     <div class="column">
@@ -8404,7 +6748,7 @@
                                 <div class="arrowBack2" >
                                 </div>
                         
-                                <div class="titleText Help" data-tab="#wtitleBtn111" >
+                                <div class="titleText" data-tab="#wtitleBtn111" >
                                     
                                     
                                         <p>Yoriba</p>
@@ -8419,12 +6763,6 @@
                     </div>
                 
                 </div>
-                
-        
         </section>
     </div>
-
-
 </header>
-
-

@@ -100,7 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  // product accordion
 
   const prodAccTitle = document.querySelectorAll(".product-section__heading"),
     prodAccContent = document.querySelectorAll(".product-section__content");
@@ -124,7 +123,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   };
 
-  // catalog & filter
 
   const filterPrices = document.querySelectorAll(".filter-price__input");
 
@@ -189,9 +187,6 @@ document.addEventListener("DOMContentLoaded", () => {
     };
   };
 
-  
-
-  // questnry selects
 
   const questnryDefSelects = document.querySelectorAll(".questnry-def-select");
 
@@ -205,7 +200,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   };
 
-  //questnry switch
 
   let questnrySwitchsPar = document.querySelectorAll(
     ".questnry-switch__wrapper"
@@ -285,7 +279,6 @@ function preventDefaultForScrollKeys(e) {
   };
 };
 
-// modern Chrome requires { passive: false } when adding event
 var supportsPassive = false;
 try {
   window.addEventListener("test", null, Object.defineProperty({}, 'passive', {
@@ -296,15 +289,13 @@ try {
 var wheelOpt = supportsPassive ? { passive: false } : false;
 var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
 
-// call this to Disable
 function disableScroll() {
-  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
-  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
-  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('DOMMouseScroll', preventDefault, false);
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+  window.addEventListener('touchmove', preventDefault, wheelOpt);
   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
 };
 
-// call this to Enable
 function enableScroll() {
   window.removeEventListener('DOMMouseScroll', preventDefault, false);
   window.removeEventListener(wheelEvent, preventDefault, wheelOpt); 
@@ -372,8 +363,6 @@ function enableScroll() {
       };
     };
   };
-    // scrollHidden();
-
     function scrollTrue () {
       window.addEventListener('scroll', scrollFunction);
     };
@@ -403,7 +392,7 @@ function enableScroll() {
       };
 
       function scrollHandler () {
-        if (scrollPosition() < lastScroll) {
+        if (scrollPosition() < (lastScroll + 1)) {
           console.log('out')
           header.classList.add('out');
           header.classList.remove('have');
@@ -417,10 +406,6 @@ function enableScroll() {
       };
       
   };
-  
-   
-  
-  //brandsSecondLevel tabs 
   
   const tabsBtn = document.querySelectorAll(".controlTitle");
   const tabsItems = document.querySelectorAll(".radioCotainer");
@@ -524,11 +509,6 @@ if (menuControlTitle.length > 0 && menuContentContainer.length > 0 && window.mat
   
   document.querySelector('.changeCategory').click();
 
-  
-  
-  
-  
-
   helpArrowContainer.forEach((el, id) => {
     el.addEventListener("click", () => {
       let activeBackground = document.querySelectorAll('.activeBackground');
@@ -560,16 +540,6 @@ if (menuControlTitle.length > 0 && menuContentContainer.length > 0 && window.mat
 
   
 };
-
-
-
-
-
-
-
-
-// tabs na mobilke
-
 
 const burgerIcon = document.querySelector('.burgerIcon');
 
@@ -613,15 +583,11 @@ if (window.matchMedia("(max-width: 920px)").matches) {
   
   document.querySelector('.changeCategory').click();
 
-
-
   menuControlTitle.forEach((el, id) => {
     el.addEventListener("click", () => {
       let menuContentContainerActive = document.querySelectorAll('.menuContentContainerActive');
       
       deleteClassSec(menuContentContainerActive);
-
-      // el.classList.add('helpArrowContainerTransform');
 
       helpArrowContainer[id].classList.add("helpArrowContainerTransform");
 
@@ -680,18 +646,12 @@ if (window.matchMedia("(max-width: 920px)").matches) {
     });
   };
 
-  
-
-
-
   titleText.forEach((el, id) => {
     el.addEventListener("click", () => {
       
       text[id].classList.add("textActive");
       
       arrowBackTitleContainerDelete(arrowBackTitleContainer);
-      // arrowBackTitleContainer[id].classList.add('.arrowBackTitleContainerTransform');
-      // helpArrowContainerTransformDelete(helpArrowContainer);
 
       arrowBackTitleContainer[id].classList.add('arrowBackTitleContainerTransform');
 
